@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6955E36C13A99084003A6098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E36B13A99084003A6098 /* Foundation.framework */; };
+		6955E37713A99084003A6098 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E37613A99084003A6098 /* SenTestingKit.framework */; };
+		6955E37913A99084003A6098 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E37813A99084003A6098 /* UIKit.framework */; };
+		6955E37A13A99084003A6098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E36B13A99084003A6098 /* Foundation.framework */; };
+		6955E37C13A99084003A6098 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E37B13A99084003A6098 /* CoreGraphics.framework */; };
+		6955E37F13A99084003A6098 /* libRIOFuzzyTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E36813A99084003A6098 /* libRIOFuzzyTime.a */; };
+		6955E38513A99084003A6098 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6955E38313A99084003A6098 /* InfoPlist.strings */; };
+		6955E38713A99084003A6098 /* RIOFuzzyTimeTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 6955E38613A99084003A6098 /* RIOFuzzyTimeTests.h */; };
+		6955E38913A99084003A6098 /* RIOFuzzyTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6955E38813A99084003A6098 /* RIOFuzzyTimeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6955E37D13A99084003A6098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6955E35F13A99084003A6098 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6955E36713A99084003A6098;
+			remoteInfo = RIOFuzzyTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6955E36813A99084003A6098 /* libRIOFuzzyTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRIOFuzzyTime.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6955E36B13A99084003A6098 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6955E36F13A99084003A6098 /* RIOFuzzyTime-Prefix.pch */ = {isa = PBXFileReference; path = "RIOFuzzyTime-Prefix.pch"; sourceTree = "<group>"; };
+		6955E37513A99084003A6098 /* RIOFuzzyTimeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RIOFuzzyTimeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6955E37613A99084003A6098 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6955E37813A99084003A6098 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6955E37B13A99084003A6098 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		6955E38213A99084003A6098 /* RIOFuzzyTimeTests-Info.plist */ = {isa = PBXFileReference; path = "RIOFuzzyTimeTests-Info.plist"; sourceTree = "<group>"; };
+		6955E38413A99084003A6098 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6955E38613A99084003A6098 /* RIOFuzzyTimeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIOFuzzyTimeTests.h; sourceTree = "<group>"; };
+		6955E38813A99084003A6098 /* RIOFuzzyTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RIOFuzzyTimeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6955E36513A99084003A6098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6955E36C13A99084003A6098 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6955E37113A99084003A6098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6955E37713A99084003A6098 /* SenTestingKit.framework in Frameworks */,
+				6955E37913A99084003A6098 /* UIKit.framework in Frameworks */,
+				6955E37A13A99084003A6098 /* Foundation.framework in Frameworks */,
+				6955E37C13A99084003A6098 /* CoreGraphics.framework in Frameworks */,
+				6955E37F13A99084003A6098 /* libRIOFuzzyTime.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6955E35D13A99084003A6098 = {
+			isa = PBXGroup;
+			children = (
+				6955E36D13A99084003A6098 /* RIOFuzzyTime */,
+				6955E38013A99084003A6098 /* RIOFuzzyTimeTests */,
+				6955E36A13A99084003A6098 /* Frameworks */,
+				6955E36913A99084003A6098 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6955E36913A99084003A6098 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6955E36813A99084003A6098 /* libRIOFuzzyTime.a */,
+				6955E37513A99084003A6098 /* RIOFuzzyTimeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6955E36A13A99084003A6098 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6955E36B13A99084003A6098 /* Foundation.framework */,
+				6955E37613A99084003A6098 /* SenTestingKit.framework */,
+				6955E37813A99084003A6098 /* UIKit.framework */,
+				6955E37B13A99084003A6098 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6955E36D13A99084003A6098 /* RIOFuzzyTime */ = {
+			isa = PBXGroup;
+			children = (
+				6955E36E13A99084003A6098 /* Supporting Files */,
+			);
+			path = RIOFuzzyTime;
+			sourceTree = "<group>";
+		};
+		6955E36E13A99084003A6098 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6955E36F13A99084003A6098 /* RIOFuzzyTime-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6955E38013A99084003A6098 /* RIOFuzzyTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6955E38613A99084003A6098 /* RIOFuzzyTimeTests.h */,
+				6955E38813A99084003A6098 /* RIOFuzzyTimeTests.m */,
+				6955E38113A99084003A6098 /* Supporting Files */,
+			);
+			path = RIOFuzzyTimeTests;
+			sourceTree = "<group>";
+		};
+		6955E38113A99084003A6098 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6955E38213A99084003A6098 /* RIOFuzzyTimeTests-Info.plist */,
+				6955E38313A99084003A6098 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6955E36613A99084003A6098 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6955E36713A99084003A6098 /* RIOFuzzyTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6955E38C13A99084003A6098 /* Build configuration list for PBXNativeTarget "RIOFuzzyTime" */;
+			buildPhases = (
+				6955E36413A99084003A6098 /* Sources */,
+				6955E36513A99084003A6098 /* Frameworks */,
+				6955E36613A99084003A6098 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RIOFuzzyTime;
+			productName = RIOFuzzyTime;
+			productReference = 6955E36813A99084003A6098 /* libRIOFuzzyTime.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6955E37413A99084003A6098 /* RIOFuzzyTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6955E38F13A99084003A6098 /* Build configuration list for PBXNativeTarget "RIOFuzzyTimeTests" */;
+			buildPhases = (
+				6955E37013A99084003A6098 /* Sources */,
+				6955E37113A99084003A6098 /* Frameworks */,
+				6955E37213A99084003A6098 /* Resources */,
+				6955E37313A99084003A6098 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6955E37E13A99084003A6098 /* PBXTargetDependency */,
+			);
+			name = RIOFuzzyTimeTests;
+			productName = RIOFuzzyTimeTests;
+			productReference = 6955E37513A99084003A6098 /* RIOFuzzyTimeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6955E35F13A99084003A6098 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Rasmussen I/O";
+			};
+			buildConfigurationList = 6955E36213A99084003A6098 /* Build configuration list for PBXProject "RIOFuzzyTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6955E35D13A99084003A6098;
+			productRefGroup = 6955E36913A99084003A6098 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6955E36713A99084003A6098 /* RIOFuzzyTime */,
+				6955E37413A99084003A6098 /* RIOFuzzyTimeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6955E37213A99084003A6098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6955E38513A99084003A6098 /* InfoPlist.strings in Resources */,
+				6955E38713A99084003A6098 /* RIOFuzzyTimeTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6955E37313A99084003A6098 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6955E36413A99084003A6098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6955E37013A99084003A6098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6955E38913A99084003A6098 /* RIOFuzzyTimeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6955E37E13A99084003A6098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6955E36713A99084003A6098 /* RIOFuzzyTime */;
+			targetProxy = 6955E37D13A99084003A6098 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6955E38313A99084003A6098 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6955E38413A99084003A6098 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6955E38A13A99084003A6098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6955E38B13A99084003A6098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6955E38D13A99084003A6098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RIOFuzzyTime.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RIOFuzzyTime/RIOFuzzyTime-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6955E38E13A99084003A6098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RIOFuzzyTime.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RIOFuzzyTime/RIOFuzzyTime-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6955E39013A99084003A6098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RIOFuzzyTime/RIOFuzzyTime-Prefix.pch";
+				INFOPLIST_FILE = "RIOFuzzyTimeTests/RIOFuzzyTimeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6955E39113A99084003A6098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RIOFuzzyTime/RIOFuzzyTime-Prefix.pch";
+				INFOPLIST_FILE = "RIOFuzzyTimeTests/RIOFuzzyTimeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6955E36213A99084003A6098 /* Build configuration list for PBXProject "RIOFuzzyTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6955E38A13A99084003A6098 /* Debug */,
+				6955E38B13A99084003A6098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6955E38C13A99084003A6098 /* Build configuration list for PBXNativeTarget "RIOFuzzyTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6955E38D13A99084003A6098 /* Debug */,
+				6955E38E13A99084003A6098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6955E38F13A99084003A6098 /* Build configuration list for PBXNativeTarget "RIOFuzzyTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6955E39013A99084003A6098 /* Debug */,
+				6955E39113A99084003A6098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6955E35F13A99084003A6098 /* Project object */;
+}
