@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		6955E36C13A99084003A6098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E36B13A99084003A6098 /* Foundation.framework */; };
 		6955E37713A99084003A6098 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E37613A99084003A6098 /* SenTestingKit.framework */; };
-		6955E37913A99084003A6098 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E37813A99084003A6098 /* UIKit.framework */; };
 		6955E37A13A99084003A6098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E36B13A99084003A6098 /* Foundation.framework */; };
-		6955E37C13A99084003A6098 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E37B13A99084003A6098 /* CoreGraphics.framework */; };
 		6955E37F13A99084003A6098 /* libRIOFuzzyTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E36813A99084003A6098 /* libRIOFuzzyTime.a */; };
 		6955E38513A99084003A6098 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6955E38313A99084003A6098 /* InfoPlist.strings */; };
 		6955E38713A99084003A6098 /* RIOFuzzyTimeTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 6955E38613A99084003A6098 /* RIOFuzzyTimeTests.h */; };
 		6955E38913A99084003A6098 /* RIOFuzzyTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6955E38813A99084003A6098 /* RIOFuzzyTimeTests.m */; };
+		6955E39813A990D3003A6098 /* NSDate+RIOFuzzyTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 6955E39613A990D3003A6098 /* NSDate+RIOFuzzyTime.h */; };
+		6955E39913A990D3003A6098 /* NSDate+RIOFuzzyTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6955E39713A990D3003A6098 /* NSDate+RIOFuzzyTime.m */; };
+		6955E39D13A992EE003A6098 /* RIOFuzzyTimeShould.m in Sources */ = {isa = PBXBuildFile; fileRef = 6955E39C13A992EE003A6098 /* RIOFuzzyTimeShould.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,17 +30,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		694CE8F313BE395300F7BF8F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		6955E36813A99084003A6098 /* libRIOFuzzyTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRIOFuzzyTime.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6955E36B13A99084003A6098 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6955E36F13A99084003A6098 /* RIOFuzzyTime-Prefix.pch */ = {isa = PBXFileReference; path = "RIOFuzzyTime-Prefix.pch"; sourceTree = "<group>"; };
+		6955E36F13A99084003A6098 /* RIOFuzzyTime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RIOFuzzyTime-Prefix.pch"; sourceTree = "<group>"; };
 		6955E37513A99084003A6098 /* RIOFuzzyTimeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RIOFuzzyTimeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6955E37613A99084003A6098 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		6955E37813A99084003A6098 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		6955E37B13A99084003A6098 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		6955E38213A99084003A6098 /* RIOFuzzyTimeTests-Info.plist */ = {isa = PBXFileReference; path = "RIOFuzzyTimeTests-Info.plist"; sourceTree = "<group>"; };
+		6955E38213A99084003A6098 /* RIOFuzzyTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RIOFuzzyTimeTests-Info.plist"; sourceTree = "<group>"; };
 		6955E38413A99084003A6098 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6955E38613A99084003A6098 /* RIOFuzzyTimeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIOFuzzyTimeTests.h; sourceTree = "<group>"; };
 		6955E38813A99084003A6098 /* RIOFuzzyTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RIOFuzzyTimeTests.m; sourceTree = "<group>"; };
+		6955E39613A990D3003A6098 /* NSDate+RIOFuzzyTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RIOFuzzyTime.h"; sourceTree = "<group>"; };
+		6955E39713A990D3003A6098 /* NSDate+RIOFuzzyTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RIOFuzzyTime.m"; sourceTree = "<group>"; };
+		6955E39B13A992EE003A6098 /* RIOFuzzyTimeShould.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIOFuzzyTimeShould.h; sourceTree = "<group>"; };
+		6955E39C13A992EE003A6098 /* RIOFuzzyTimeShould.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIOFuzzyTimeShould.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6955E37713A99084003A6098 /* SenTestingKit.framework in Frameworks */,
-				6955E37913A99084003A6098 /* UIKit.framework in Frameworks */,
 				6955E37A13A99084003A6098 /* Foundation.framework in Frameworks */,
-				6955E37C13A99084003A6098 /* CoreGraphics.framework in Frameworks */,
 				6955E37F13A99084003A6098 /* libRIOFuzzyTime.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +71,7 @@
 		6955E35D13A99084003A6098 = {
 			isa = PBXGroup;
 			children = (
+				694CE8F313BE395300F7BF8F /* README.md */,
 				6955E36D13A99084003A6098 /* RIOFuzzyTime */,
 				6955E38013A99084003A6098 /* RIOFuzzyTimeTests */,
 				6955E36A13A99084003A6098 /* Frameworks */,
@@ -90,8 +93,6 @@
 			children = (
 				6955E36B13A99084003A6098 /* Foundation.framework */,
 				6955E37613A99084003A6098 /* SenTestingKit.framework */,
-				6955E37813A99084003A6098 /* UIKit.framework */,
-				6955E37B13A99084003A6098 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,6 +100,8 @@
 		6955E36D13A99084003A6098 /* RIOFuzzyTime */ = {
 			isa = PBXGroup;
 			children = (
+				6955E39613A990D3003A6098 /* NSDate+RIOFuzzyTime.h */,
+				6955E39713A990D3003A6098 /* NSDate+RIOFuzzyTime.m */,
 				6955E36E13A99084003A6098 /* Supporting Files */,
 			);
 			path = RIOFuzzyTime;
@@ -117,6 +120,8 @@
 			children = (
 				6955E38613A99084003A6098 /* RIOFuzzyTimeTests.h */,
 				6955E38813A99084003A6098 /* RIOFuzzyTimeTests.m */,
+				6955E39B13A992EE003A6098 /* RIOFuzzyTimeShould.h */,
+				6955E39C13A992EE003A6098 /* RIOFuzzyTimeShould.m */,
 				6955E38113A99084003A6098 /* Supporting Files */,
 			);
 			path = RIOFuzzyTimeTests;
@@ -138,6 +143,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6955E39813A990D3003A6098 /* NSDate+RIOFuzzyTime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6955E39913A990D3003A6098 /* NSDate+RIOFuzzyTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6955E38913A99084003A6098 /* RIOFuzzyTimeTests.m in Sources */,
+				6955E39D13A992EE003A6098 /* RIOFuzzyTimeShould.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +395,7 @@
 				6955E38E13A99084003A6098 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6955E38F13A99084003A6098 /* Build configuration list for PBXNativeTarget "RIOFuzzyTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +404,7 @@
 				6955E39113A99084003A6098 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
