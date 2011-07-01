@@ -1,12 +1,10 @@
 # RIOFuzzyTime -- Get a descriptive text time since for a given NSDate
 
-***
 
 ## Description
 
 More text.
 
-***
 
 ## Table of Contents
 
@@ -16,7 +14,14 @@ This readme file will contain:
 * Mission
 * Usage Examples
 
-***
+
+## Usage Examples
+
+    NSDate *time = [NSDate now];
+    NSLog(@"Time since:%@", [time descriptiveTimeSince]);
+
+
+## States (Temp)
 
 30 _time scale_ ago/from now
 
