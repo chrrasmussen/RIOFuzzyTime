@@ -17,9 +17,10 @@ This readme file will contain:
 
 ## Usage Examples
 
-    NSDate *time = [NSDate now];
-    NSLog(@"Time since:%@", [time descriptiveTimeSince]);
-
+```obj-c
+NSDate *time = [NSDate now];
+NSLog(@"Time since:%@", [time descriptiveTimeSince]);
+```
 
 ## States (Temp)
 
