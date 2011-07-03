@@ -64,6 +64,26 @@
 				<string>%d hours since now</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>offset</key>
+			<integer>604800</integer>
+			<key>scale</key>
+			<integer>86400</integer>
+			<key>singularForm</key>
+			<dict>
+				<key>past</key>
+				<string>Yesterday</string>
+				<key>future</key>
+				<string>Tomorrow</string>
+			</dict>
+			<key>pluralForm</key>
+			<dict>
+				<key>past</key>
+				<string>%d days ago</string>
+				<key>future</key>
+				<string>%d days since now</string>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>

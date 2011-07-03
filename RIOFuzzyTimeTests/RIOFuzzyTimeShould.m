@@ -18,68 +18,146 @@
 
 @implementation RIOFuzzyTimeShould
 
-- (void)testReturnJustNow
+- (void)testReturnJustNowPast
 {
-    NSString *m10s = [self fuzzyTimeForTimeInterval:-10.0];
-    NSString *m30s = [self fuzzyTimeForTimeInterval:-30.0];
-    NSString *m59s = [self fuzzyTimeForTimeInterval:-59.0];
+    NSString *low = [self fuzzyTimeForTimeInterval: -0.0];
+    NSString *mid = [self fuzzyTimeForTimeInterval: -30.0];
+    NSString *high = [self fuzzyTimeForTimeInterval:-59.0];
     
-    STAssertEqualObjects(m10s, @"Just now", nil);
-    STAssertEqualObjects(m30s, @"Just now", nil);
-    STAssertEqualObjects(m59s, @"Just now", nil);
+    STAssertEqualObjects(low, @"Just now", nil);
+    STAssertEqualObjects(mid, @"Just now", nil);
+    STAssertEqualObjects(high, @"Just now", nil);
+}
+
+- (void)testReturnJustNowFuture
+{
+    NSString *low = [self fuzzyTimeForTimeInterval: 0.5];
+    NSString *mid = [self fuzzyTimeForTimeInterval: 30.5];
+    NSString *high = [self fuzzyTimeForTimeInterval:59.5];
     
-    
-    NSString *p10s = [self fuzzyTimeForTimeInterval:10.5];
-    NSString *p30s = [self fuzzyTimeForTimeInterval:30.5];
-    NSString *p59s = [self fuzzyTimeForTimeInterval:59.5];
-    
-    STAssertEqualObjects(p10s, @"Just now", nil);
-    STAssertEqualObjects(p30s, @"Just now", nil);
-    STAssertEqualObjects(p59s, @"Just now", nil);
+    STAssertEqualObjects(low, @"Just now", nil);
+    STAssertEqualObjects(mid, @"Just now", nil);
+    STAssertEqualObjects(high, @"Just now", nil);
 }
 
 - (void)testReturn1MinuteAgo
 {
-    NSString *m60s = [self fuzzyTimeForTimeInterval:-60.0];
-    NSString *m90s = [self fuzzyTimeForTimeInterval:-90.0];
-    NSString *m119s = [self fuzzyTimeForTimeInterval:-119.0];
+    float minute = 60.0;
+    NSString *low = [self fuzzyTimeForTimeInterval: -(1.0 * minute + 1)];
+    NSString *mid = [self fuzzyTimeForTimeInterval: -(1.5 * minute)];
+    NSString *high = [self fuzzyTimeForTimeInterval:-(2.0 * minute - 1)];
     
-    STAssertEqualObjects(m60s, @"1 minute ago", nil);
-    STAssertEqualObjects(m90s, @"1 minute ago", nil);
-    STAssertEqualObjects(m119s, @"1 minute ago", nil);
+    STAssertEqualObjects(low, @"1 minute ago", nil);
+    STAssertEqualObjects(mid, @"1 minute ago", nil);
+    STAssertEqualObjects(high, @"1 minute ago", nil);
 }
 
 - (void)testReturn1MinuteSinceNow
 {
-    NSString *p60s = [self fuzzyTimeForTimeInterval:60.5];
-    NSString *p90s = [self fuzzyTimeForTimeInterval:90.5];
-    NSString *p119s = [self fuzzyTimeForTimeInterval:119.5];
+    float minute = 60.0;
+    NSString *low = [self fuzzyTimeForTimeInterval: 1.0 * minute + 1];
+    NSString *mid = [self fuzzyTimeForTimeInterval: 1.5 * minute];
+    NSString *high = [self fuzzyTimeForTimeInterval:2.0 * minute - 1];
     
-    STAssertEqualObjects(p60s, @"1 minute since now", nil);
-    STAssertEqualObjects(p90s, @"1 minute since now", nil);
-    STAssertEqualObjects(p119s, @"1 minute since now", nil);
+    STAssertEqualObjects(low, @"1 minute since now", nil);
+    STAssertEqualObjects(mid, @"1 minute since now", nil);
+    STAssertEqualObjects(high, @"1 minute since now", nil);
 }
 
-- (void)testReturn5MinutesAgo
+- (void)testReturn59MinutesAgo
 {
-    NSString *m300s = [self fuzzyTimeForTimeInterval:-300.0];
-    NSString *m330s = [self fuzzyTimeForTimeInterval:-330.0];
-    NSString *m359s = [self fuzzyTimeForTimeInterval:-359.0];
+    float minute = 60;
+    NSString *low = [self fuzzyTimeForTimeInterval: -(59.0 * minute + 1)];
+    NSString *mid = [self fuzzyTimeForTimeInterval: -(59.5 * minute)];
+    NSString *high = [self fuzzyTimeForTimeInterval:-(60.0 * minute - 1)];
     
-    STAssertEqualObjects(m300s, @"5 minutes ago", nil);
-    STAssertEqualObjects(m330s, @"5 minutes ago", nil);
-    STAssertEqualObjects(m359s, @"5 minutes ago", nil);
+    STAssertEqualObjects(low, @"59 minutes ago", nil);
+    STAssertEqualObjects(mid, @"59 minutes ago", nil);
+    STAssertEqualObjects(high, @"59 minutes ago", nil);
 }
 
-- (void)testReturn5MinutesSinceNow
+- (void)testReturn59MinutesSinceNow
 {
-    NSString *p300s = [self fuzzyTimeForTimeInterval:300.5];
-    NSString *p330s = [self fuzzyTimeForTimeInterval:330.5];
-    NSString *p359s = [self fuzzyTimeForTimeInterval:359.5];
+    float minute = 60;
+    NSString *low = [self fuzzyTimeForTimeInterval: 59.0 * minute + 1];
+    NSString *mid = [self fuzzyTimeForTimeInterval: 59.5 * minute];
+    NSString *high = [self fuzzyTimeForTimeInterval:60.0 * minute - 1];
     
-    STAssertEqualObjects(p300s, @"5 minutes since now", nil);
-    STAssertEqualObjects(p330s, @"5 minutes since now", nil);
-    STAssertEqualObjects(p359s, @"5 minutes since now", nil);
+    STAssertEqualObjects(low, @"59 minutes since now", nil);
+    STAssertEqualObjects(mid, @"59 minutes since now", nil);
+    STAssertEqualObjects(high, @"59 minutes since now", nil);
+}
+
+- (void)testReturn1HourAgo
+{
+    float hour = 60*60;
+    NSString *low = [self fuzzyTimeForTimeInterval: -(1.0 * hour + 1)];
+    NSString *mid = [self fuzzyTimeForTimeInterval: -(1.5 * hour)];
+    NSString *high = [self fuzzyTimeForTimeInterval:-(2.0 * hour - 1)];
+    
+    STAssertEqualObjects(low, @"1 hour ago", nil);
+    STAssertEqualObjects(mid, @"1 hour ago", nil);
+    STAssertEqualObjects(high, @"1 hour ago", nil);
+}
+
+- (void)testReturn1HourSinceNow
+{
+    float hour = 60*60;
+    NSString *low = [self fuzzyTimeForTimeInterval: 1.0 * hour + 1];
+    NSString *mid = [self fuzzyTimeForTimeInterval: 1.5 * hour];
+    NSString *high = [self fuzzyTimeForTimeInterval:2.0 * hour - 1];
+    
+    STAssertEqualObjects(low, @"1 hour since now", nil);
+    STAssertEqualObjects(mid, @"1 hour since now", nil);
+    STAssertEqualObjects(high, @"1 hour since now", nil);
+}
+
+- (void)testReturn23HoursAgo
+{
+    float hour = 60*60;
+    NSString *low = [self fuzzyTimeForTimeInterval: -(23.0 * hour + 1)];
+    NSString *mid = [self fuzzyTimeForTimeInterval: -(23.5 * hour)];
+    NSString *high = [self fuzzyTimeForTimeInterval:-(24.0 * hour - 1)];
+    
+    STAssertEqualObjects(low, @"23 hours ago", nil);
+    STAssertEqualObjects(mid, @"23 hours ago", nil);
+    STAssertEqualObjects(high, @"23 hours ago", nil);
+}
+
+- (void)testReturn23HoursSinceNow
+{
+    float hour = 60*60;
+    NSString *low = [self fuzzyTimeForTimeInterval: 23.0 * hour + 1];
+    NSString *mid = [self fuzzyTimeForTimeInterval: 23.5 * hour];
+    NSString *high = [self fuzzyTimeForTimeInterval:24.0 * hour - 1];
+    
+    STAssertEqualObjects(low, @"23 hours since now", nil);
+    STAssertEqualObjects(mid, @"23 hours since now", nil);
+    STAssertEqualObjects(high, @"23 hours since now", nil);
+}
+
+- (void)testReturn1DayAgo
+{
+    float day = 60*60*24;
+    NSString *low = [self fuzzyTimeForTimeInterval: -(1.0 * day + 1)];
+    NSString *mid = [self fuzzyTimeForTimeInterval: -(1.5 * day)];
+    NSString *high = [self fuzzyTimeForTimeInterval:-(2.0 * day - 1)];
+    
+    STAssertEqualObjects(low, @"Yesterday", nil);
+    STAssertEqualObjects(mid, @"Yesterday", nil);
+    STAssertEqualObjects(high, @"Yesterday", nil);
+}
+
+- (void)testReturn1DaySinceNow
+{
+    float day = 60*60*24;
+    NSString *low = [self fuzzyTimeForTimeInterval: 1.0 * day + 1];
+    NSString *mid = [self fuzzyTimeForTimeInterval: 1.5 * day];
+    NSString *high = [self fuzzyTimeForTimeInterval:2.0 * day - 1];
+    
+    STAssertEqualObjects(low, @"Tomorrow", nil);
+    STAssertEqualObjects(mid, @"Tomorrow", nil);
+    STAssertEqualObjects(high, @"Tomorrow", nil);
 }
 
 
