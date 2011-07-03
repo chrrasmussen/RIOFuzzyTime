@@ -10,4 +10,6 @@
 
 @interface RIOFuzzyTime : NSObject
 
++ (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)timeInterval;
+
 @end

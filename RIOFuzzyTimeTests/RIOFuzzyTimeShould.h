@@ -10,6 +10,4 @@
 
 @interface RIOFuzzyTimeShould : SenTestCase
 
-@property (nonatomic, strong) NSDate *now;
-
 @end

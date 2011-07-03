@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>offset</key>
-			<integer>0</integer>
+			<integer>60</integer>
 			<key>scale</key>
 			<integer>1</integer>
 			<key>singularForm</key>
@@ -26,7 +26,7 @@
 		</dict>
 		<dict>
 			<key>offset</key>
-			<integer>60</integer>
+			<integer>3600</integer>
 			<key>scale</key>
 			<integer>60</integer>
 			<key>singularForm</key>
@@ -34,19 +34,19 @@
 				<key>past</key>
 				<string>1 minute ago</string>
 				<key>future</key>
-				<string>1 minute from now</string>
+				<string>1 minute since now</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
 				<string>%d minutes ago</string>
 				<key>future</key>
-				<string>%d minutes from now</string>
+				<string>%d minutes since now</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>offset</key>
-			<integer>3600</integer>
+			<integer>86400</integer>
 			<key>scale</key>
 			<integer>3600</integer>
 			<key>singularForm</key>
@@ -54,14 +54,14 @@
 				<key>past</key>
 				<string>1 hour ago</string>
 				<key>future</key>
-				<string>1 hour from now</string>
+				<string>1 hour since now</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
 				<string>%d hours ago</string>
 				<key>future</key>
-				<string>%d hours from now</string>
+				<string>%d hours since now</string>
 			</dict>
 		</dict>
 	</array>
