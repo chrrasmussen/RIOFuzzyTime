@@ -86,7 +86,7 @@
 		</dict>
 		<dict>
 			<key>limit</key>
-			<integer>3024000</integer>
+			<integer>2629800</integer>
 			<key>scale</key>
 			<integer>604800</integer>
 			<key>singularForm</key>
@@ -146,7 +146,7 @@
 		</dict>
 		<dict>
 			<key>limit</key>
-			<integer>63115200000</integer>
+			<integer>3155760000</integer>
 			<key>scale</key>
 			<integer>315576000</integer>
 			<key>singularForm</key>
