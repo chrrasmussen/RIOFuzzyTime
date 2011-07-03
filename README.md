@@ -9,7 +9,7 @@ Text.
 
 ## Usage Examples
 
-Using the NSDate-category:
+### Using the NSDate-category
 
 ```obj-c
 NSDate *date = [NSDate date];
@@ -22,9 +22,7 @@ Returns:
 Fuzzy time: Just now
 ```
 
-***
-
-Using the RIOFuzzyTime class:
+### Using the RIOFuzzyTime class
 
 ```obj-c
 NSLog(@"Fuzzy time: %@", [RIOFuzzyTime fuzzyTimeForTimeInterval:-1234.0]);
@@ -95,4 +93,4 @@ Fuzzy time: 20 minutes ago
     </tr>
 </table>
 
-It is important that the limit of one category is higher than or equal to the scale of the next category. For example: In 1 month there are approximately 30,4375 days (2629800 seconds). In 4 weeks there are only 28 days (2419200 seconds). To accomodate this, we must add another week (3024000 seconds) to the limit.
+It is important that the limit of one category is higher than or equal to the scale of the next category. For example: In 1 month there are approximately 30,4375 days (2629800 seconds). In 4 weeks there are only 28 days (2419200 seconds). To accommodate this, we must add another week (3024000 seconds) to the limit. Otherwise, an input of 29 days will return 0 months.
