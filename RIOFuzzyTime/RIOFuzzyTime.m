@@ -27,8 +27,8 @@
     NSArray *scales = [self scales];
     for (NSDictionary *scale in scales)
     {
-        NSUInteger offsetValue = [[scale objectForKey:@"offset"] unsignedIntegerValue];
-        if (offsetValue > absoluteTimeInterval)
+        NSUInteger limitValue = [[scale objectForKey:@"limit"] unsignedIntegerValue];
+        if (limitValue > absoluteTimeInterval)
         {
             NSUInteger scaleValue = [[scale objectForKey:@"scale"] unsignedIntegerValue];
             NSUInteger scaledTimeInterval = absoluteTimeInterval / scaleValue;
@@ -73,7 +73,7 @@
     if (scales == nil)
     {
         NSBundle *bundle = [NSBundle bundleWithPath:@"RIOFuzzyTime.bundle"];
-        NSString *path = [bundle pathForResource:@"scales" ofType:@"plist" inDirectory:@"" forLocalization:@"en"];
+        NSString *path = [bundle pathForResource:@"Scales" ofType:@"plist" inDirectory:@"" forLocalization:@"en"];
         NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
         scales = [dict objectForKey:@"scales"];
     }

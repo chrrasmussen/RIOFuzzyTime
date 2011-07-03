@@ -20,11 +20,57 @@ NSLog(@"Time since:%@", [time descriptiveTimeSince]);
 <table>
     <tr>
         <th>Time</th>
-        <th>Description</th>
+        <th>Singular form</th>
+        <th>Limit</th>
+        <th>Scale</th>
     </tr>
     <tr>
-        <td>0-60s</td>
+        <td>0-59 seconds</td>
         <td>Just Now</td>
+        <td>60s</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1-59 minutes</td>
+        <td>1 minute</td>
+        <td>60*60</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>1-23 hours</td>
+        <td>1 hour</td>
+        <td>60*60*24</td>
+        <td>60*60</td>
+    </tr>
+    <tr>
+        <td>1-6 days</td>
+        <td>Yesterday</td>
+        <td>60*60*24*7</td>
+        <td>60*60*24</td>
+    </tr>
+    <tr>
+        <td>1-4 weeks</td>
+        <td>Last week</td>
+        <td>60*60*24*7*5</td>
+        <td>60*60*24*7</td>
+    </tr>
+    <tr>
+        <td>1-11 months</td>
+        <td>Last month</td>
+        <td>60*60*24*365,25</td>
+        <td>60*60*24*365,25/12</td>
+    </tr>
+    <tr>
+        <td>1-9 years</td>
+        <td>Last year</td>
+        <td>60*60*24*365,25*10</td>
+        <td>60*60*24*365,25</td>
+    </tr>
+    <tr>
+        <td>1-X centuries</td>
+        <td>Last century</td>
+        <td>60*60*24*365,25*10</td>
+        <td>60*60*24*365,25</td>
     </tr>
 </table>
 
