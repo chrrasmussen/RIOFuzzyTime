@@ -88,11 +88,11 @@ Fuzzy time: 20 minutes ago
         <td>60*60*24*365,25</td>
     </tr>
     <tr>
-        <td>1-X centuries</td>
+        <td>1-199 centuries</td>
         <td>Last century</td>
         <td>60*60*24*365,25*10*200</td>
         <td>60*60*24*365,25*10</td>
     </tr>
 </table>
 
-
+It is important that the limit of one category is higher than or equal to the scale of the next category. For example: In 1 month there are approximately 30,4375 days (2629800 seconds). In 4 weeks there are only 28 days (2419200 seconds). To accomodate this, we must add another week (3024000 seconds) to the limit.

@@ -126,9 +126,9 @@
 		</dict>
 		<dict>
 			<key>limit</key>
-			<integer>2419200</integer>
+			<integer>315576000</integer>
 			<key>scale</key>
-			<integer>604800</integer>
+			<integer>31557600</integer>
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
@@ -146,9 +146,9 @@
 		</dict>
 		<dict>
 			<key>limit</key>
-			<integer>2419200</integer>
+			<integer>63115200000</integer>
 			<key>scale</key>
-			<integer>604800</integer>
+			<integer>315576000</integer>
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
