@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>secondScale</key>
+	<dict>
+		<key>offset</key>
+		<integer>60</integer>
+		<key>scale</key>
+		<integer>1</integer>
+		<key>singularForm</key>
+		<dict>
+			<key>past</key>
+			<string>Just now</string>
+			<key>future</key>
+			<string>Just now</string>
+		</dict>
+		<key>pluralForm</key>
+		<dict>
+			<key>past</key>
+			<string>Just now</string>
+			<key>future</key>
+			<string>Just now</string>
+		</dict>
+	</dict>
+	<key>minuteScale</key>
+	<dict>
+		<key>offset</key>
+		<integer>120</integer>
+		<key>scale</key>
+		<integer>60</integer>
+		<key>singularForm</key>
+		<dict>
+			<key>past</key>
+			<string>1 minute ago</string>
+			<key>future</key>
+			<string>1 minute from now</string>
+		</dict>
+		<key>pluralForm</key>
+		<dict>
+			<key>past</key>
+			<string>%d minutes ago</string>
+			<key>future</key>
+			<string>%d minutes from now</string>
+		</dict>
+	</dict>
+	<key>hourScale</key>
+	<dict>
+		<key>offset</key>
+		<integer>3600</integer>
+		<key>scale</key>
+		<integer>3600</integer>
+		<key>singularForm</key>
+		<dict>
+			<key>past</key>
+			<string>1 hour ago</string>
+			<key>future</key>
+			<string>1 hour from now</string>
+		</dict>
+		<key>pluralForm</key>
+		<dict>
+			<key>past</key>
+			<string>%d hours ago</string>
+			<key>future</key>
+			<string>%d hours from now</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
