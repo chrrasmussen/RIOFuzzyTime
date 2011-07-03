@@ -9,8 +9,6 @@ Text.
 
 ## Examples of Usage
 
-<<<<<<< master
-=======
 ### Using the NSDate-category
 
 ```obj-c
@@ -26,7 +24,6 @@ Fuzzy time: Just now
 
 ### Using the RIOFuzzyTime class
 
->>>>>>> local
 ```obj-c
 NSDate *time = [NSDate now];
 NSLog(@"Time since:%@", [time descriptiveTimeSince]);
@@ -60,10 +57,6 @@ Fuzzy time: 20 minutes ago
         <th>Scale</th>
     </tr>
     <tr>
-<<<<<<< master
-        <td>0-60s</td>
-        <td>Just Now</td>
-=======
         <td>0-59 seconds</td>
         <td>Just now</td>
         <td>60</td>
@@ -110,7 +103,6 @@ Fuzzy time: 20 minutes ago
         <td>Last century</td>
         <td>60*60*24*365,25*10*10</td>
         <td>60*60*24*365,25*10</td>
->>>>>>> local
     </tr>
 </table>
 
