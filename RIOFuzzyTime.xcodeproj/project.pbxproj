@@ -35,9 +35,6 @@
 		6919A4A113C0ACAF00523264 /* RIOFuzzyTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIOFuzzyTime.h; sourceTree = "<group>"; };
 		6919A4A213C0ACAF00523264 /* RIOFuzzyTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIOFuzzyTime.m; sourceTree = "<group>"; };
 		6919A4AD13C0B91A00523264 /* RIOFuzzyTime.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RIOFuzzyTime.bundle; sourceTree = "<group>"; };
-		6919A4AF13C0BB2100523264 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
-		6919A4B013C0BB2100523264 /* RIOFuzzyTime.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RIOFuzzyTime.bundle; sourceTree = "<group>"; };
-		6919A4B213C0BC6800523264 /* RIOFuzzyTime2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RIOFuzzyTime2.bundle; sourceTree = "<group>"; };
 		694CE8F313BE395300F7BF8F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		6955E36813A99084003A6098 /* libRIOFuzzyTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRIOFuzzyTime.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6955E36B13A99084003A6098 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				694CE8F313BE395300F7BF8F /* README.md */,
-				6919A4B213C0BC6800523264 /* RIOFuzzyTime2.bundle */,
 				6919A4AD13C0B91A00523264 /* RIOFuzzyTime.bundle */,
 				6955E36D13A99084003A6098 /* RIOFuzzyTime */,
 				6955E38013A99084003A6098 /* RIOFuzzyTimeTests */,
@@ -109,8 +105,6 @@
 		6955E36D13A99084003A6098 /* RIOFuzzyTime */ = {
 			isa = PBXGroup;
 			children = (
-				6919A4AF13C0BB2100523264 /* en.lproj */,
-				6919A4B013C0BB2100523264 /* RIOFuzzyTime.bundle */,
 				6955E39613A990D3003A6098 /* NSDate+RIOFuzzyTime.h */,
 				6955E39713A990D3003A6098 /* NSDate+RIOFuzzyTime.m */,
 				6919A4A113C0ACAF00523264 /* RIOFuzzyTime.h */,
