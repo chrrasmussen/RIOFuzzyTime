@@ -7,8 +7,26 @@ Introduction/Description/Mission.
 Text.
 
 
-## Usage Examples
+## Examples of Usage
 
+<<<<<<< master
+=======
+### Using the NSDate-category
+
+```obj-c
+NSDate *now = [NSDate date];
+NSLog(@"Fuzzy time: %@", [now fuzzyTime]);
+```
+
+Returns:
+
+```
+Fuzzy time: Just now
+```
+
+### Using the RIOFuzzyTime class
+
+>>>>>>> local
 ```obj-c
 NSDate *time = [NSDate now];
 NSLog(@"Time since:%@", [time descriptiveTimeSince]);
@@ -23,8 +41,57 @@ NSLog(@"Time since:%@", [time descriptiveTimeSince]);
         <th>Description</th>
     </tr>
     <tr>
+<<<<<<< master
         <td>0-60s</td>
         <td>Just Now</td>
+=======
+        <td>0-59 seconds</td>
+        <td>Just now</td>
+        <td>60</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1-59 minutes</td>
+        <td>1 minute ago</td>
+        <td>60*60</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>1-23 hours</td>
+        <td>1 hour ago</td>
+        <td>60*60*24</td>
+        <td>60*60</td>
+    </tr>
+    <tr>
+        <td>1-6 days</td>
+        <td>Yesterday</td>
+        <td>60*60*24*7</td>
+        <td>60*60*24</td>
+    </tr>
+    <tr>
+        <td>1-4 weeks</td>
+        <td>Last week</td>
+        <td>60*60*24*365,25/12</td>
+        <td>60*60*24*7</td>
+    </tr>
+    <tr>
+        <td>1-11 months</td>
+        <td>Last month</td>
+        <td>60*60*24*365,25</td>
+        <td>60*60*24*365,25/12</td>
+    </tr>
+    <tr>
+        <td>1-9 years</td>
+        <td>Last year</td>
+        <td>60*60*24*365,25*10</td>
+        <td>60*60*24*365,25</td>
+    </tr>
+    <tr>
+        <td>1-9 centuries</td>
+        <td>Last century</td>
+        <td>60*60*24*365,25*10*10</td>
+        <td>60*60*24*365,25*10</td>
+>>>>>>> local
     </tr>
 </table>
 
