@@ -28,6 +28,19 @@ Fuzzy time: Just now
 
 >>>>>>> local
 ```obj-c
+NSDate *time = [NSDate now];
+NSLog(@"Time since:%@", [time descriptiveTimeSince]);
+```
+
+Returns:
+
+```
+Fuzzy time: Just now
+```
+
+### Using the RIOFuzzyTime class
+
+```obj-c
 NSLog(@"Fuzzy time: %@", [RIOFuzzyTime fuzzyTimeForTimeInterval:-1234.0]);
 ```
 

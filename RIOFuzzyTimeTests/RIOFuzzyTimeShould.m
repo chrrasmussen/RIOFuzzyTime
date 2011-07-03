@@ -18,15 +18,7 @@
 
 @implementation RIOFuzzyTimeShould
 
-<<<<<<< master
-- (void)testReturnEmptyForToday
-=======
 #pragma mark - Test seconds
-
-- (void)testTaltan
-{
-    NSLog(@"%@", [self fuzzyTimeForTimeInterval:-252288000]);
-}
 
 - (void)testReturnJustNowPast
 {
@@ -413,7 +405,6 @@
 #pragma mark - Private methods
 
 - (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)timeInterval
->>>>>>> local
 {
     NSDate *now = [NSDate date];
     NSDate *offsetDate = [now dateByAddingTimeInterval:timeInterval];
