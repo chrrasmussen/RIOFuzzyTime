@@ -9,7 +9,11 @@
 #import "RIOFuzzyTimeShould.h"
 #import "NSDate+RIOFuzzyTime.h"
 
-#import "RIOFuzzyTime.h"
+@interface RIOFuzzyTimeShould ()
+
+- (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)timeInterval;
+
+@end
 
 
 @implementation RIOFuzzyTimeShould
@@ -411,13 +415,9 @@
 - (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)timeInterval
 >>>>>>> local
 {
-    RIOFuzzyTime *ft = [[RIOFuzzyTime alloc] init];
-    STFail(@"Fail");
-//    STAssertEqualObjects(@"test", [[NSDate date] fuzzyTime], @"abc");
-//    0-10s	Just now
-//    10-20	1 minute ago
-//    
-//	1 hour ago
+    NSDate *now = [NSDate date];
+    NSDate *offsetDate = [now dateByAddingTimeInterval:timeInterval];
+    return [offsetDate fuzzyTime];
 }
 
 @end
