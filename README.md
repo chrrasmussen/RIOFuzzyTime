@@ -1,10 +1,13 @@
-# RIOFuzzyTime -- Get a descriptive text time since for a given NSDate
+# RIOFuzzyTime
 
-Introduction/Description/Mission.
+Calculates the time since/to a given NSDate. E.g. 30 minutes ago, yesterday or 2 months from now.
+
+The goal for this library is to support multiple languages. As of today it only supports English, but a Norwegian translation is planned.
+
 
 ## Installation
 
-Text.
+Coming soon!
 
 
 ## Examples of Usage
@@ -14,19 +17,6 @@ Text.
 ```obj-c
 NSDate *now = [NSDate date];
 NSLog(@"Fuzzy time: %@", [now fuzzyTime]);
-```
-
-Returns:
-
-```
-Fuzzy time: Just now
-```
-
-### Using the RIOFuzzyTime class
-
-```obj-c
-NSDate *time = [NSDate now];
-NSLog(@"Time since:%@", [time descriptiveTimeSince]);
 ```
 
 Returns:
