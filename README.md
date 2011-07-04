@@ -2,7 +2,7 @@
 
 Calculates the time since/to a given NSDate. E.g. 30 minutes ago, yesterday or 2 months from now.
 
-The goal for this library is to support multiple languages. As of today it only supports English, but a Norwegian translation is planned.
+The goal for this library is to support multiple languages. As of today it only supports English and Norwegian. If you can help, please contact me.
 
 
 ## Installation
@@ -97,3 +97,8 @@ Fuzzy time: 20 minutes ago
 </table>
 
 It is important that the limit of one category is higher than or equal to the scale of the next category. For example: In 1 month there are approximately 30.4375 days (2629800 seconds). In 4 weeks there are only 28 days (2419200 seconds). To accommodate this, we must add another week (which gives a total of 3024000 seconds) to the limit. Otherwise, an input of 29 days will return 0 months.
+
+
+## License
+
+The license for this library is currently undetermined. Either the Apache license or the BSD license will be chosen.
