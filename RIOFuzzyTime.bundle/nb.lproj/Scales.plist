@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>scales</key>
+	<array>
+		<dict>
+			<key>limit</key>
+			<integer>60</integer>
+			<key>scale</key>
+			<integer>1</integer>
+			<key>singularForm</key>
+			<dict>
+				<key>past</key>
+				<string>Akkurat nå</string>
+				<key>future</key>
+				<string>Akkurat nå</string>
+			</dict>
+			<key>pluralForm</key>
+			<dict>
+				<key>past</key>
+				<string>Akkurat nå</string>
+				<key>future</key>
+				<string>Akkurat nå</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>limit</key>
+			<integer>3600</integer>
+			<key>scale</key>
+			<integer>60</integer>
+			<key>singularForm</key>
+			<dict>
+				<key>past</key>
+				<string>1 minutt siden</string>
+				<key>future</key>
+				<string>1 minutt fra nå</string>
+			</dict>
+			<key>pluralForm</key>
+			<dict>
+				<key>past</key>
+				<string>%d minutter siden</string>
+				<key>future</key>
+				<string>%d minutter fra nå</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>limit</key>
+			<integer>86400</integer>
+			<key>scale</key>
+			<integer>3600</integer>
+			<key>singularForm</key>
+			<dict>
+				<key>past</key>
+				<string>1 time siden</string>
+				<key>future</key>
+				<string>1 time fra nå</string>
+			</dict>
+			<key>pluralForm</key>
+			<dict>
+				<key>past</key>
+				<string>%d timer siden</string>
+				<key>future</key>
+				<string>%d timer fra nå</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>limit</key>
+			<integer>604800</integer>
+			<key>scale</key>
+			<integer>86400</integer>
+			<key>singularForm</key>
+			<dict>
+				<key>past</key>
+				<string>I går</string>
+				<key>future</key>
+				<string>I morgen</string>
+			</dict>
+			<key>pluralForm</key>
+			<dict>
+				<key>past</key>
+				<string>%d dager siden</string>
+				<key>future</key>
+				<string>%d dager fra nå</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>limit</key>
+			<integer>2629800</integer>
+			<key>scale</key>
+			<integer>604800</integer>
+			<key>singularForm</key>
+			<dict>
+				<key>past</key>
+				<string>Forrige uke</string>
+				<key>future</key>
+				<string>Neste uke</string>
+			</dict>
+			<key>pluralForm</key>
+			<dict>
+				<key>past</key>
+				<string>%d uker siden</string>
+				<key>future</key>
+				<string>%d uker fra nå</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>limit</key>
+			<integer>31557600</integer>
+			<key>scale</key>
+			<integer>2629800</integer>
+			<key>singularForm</key>
+			<dict>
+				<key>past</key>
+				<string>Forrige måned</string>
+				<key>future</key>
+				<string>Neste måned</string>
+			</dict>
+			<key>pluralForm</key>
+			<dict>
+				<key>past</key>
+				<string>%d måneder siden</string>
+				<key>future</key>
+				<string>%d måneder fra nå</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>limit</key>
+			<integer>315576000</integer>
+			<key>scale</key>
+			<integer>31557600</integer>
+			<key>singularForm</key>
+			<dict>
+				<key>past</key>
+				<string>I fjor</string>
+				<key>future</key>
+				<string>Neste år</string>
+			</dict>
+			<key>pluralForm</key>
+			<dict>
+				<key>past</key>
+				<string>%d år siden</string>
+				<key>future</key>
+				<string>%d år fra nå</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>limit</key>
+			<integer>3155760000</integer>
+			<key>scale</key>
+			<integer>315576000</integer>
+			<key>singularForm</key>
+			<dict>
+				<key>past</key>
+				<string>Forrige århundre</string>
+				<key>future</key>
+				<string>Neste århundre</string>
+			</dict>
+			<key>pluralForm</key>
+			<dict>
+				<key>past</key>
+				<string>%d århundre siden</string>
+				<key>future</key>
+				<string>%d århundre fra nå</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

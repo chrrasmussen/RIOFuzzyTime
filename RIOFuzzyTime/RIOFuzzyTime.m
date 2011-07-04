@@ -11,6 +11,7 @@
 @interface RIOFuzzyTime ()
 
 + (NSArray *)scales;
++ (NSString *)pathToResource:(NSString *)resource inBundleNamed:(NSString *)bundleName;
 
 @end
 
@@ -60,13 +61,21 @@
     static NSArray *scales = nil;
     if (scales == nil)
     {
-        NSBundle *bundle = [NSBundle bundleWithPath:@"RIOFuzzyTime.bundle"];
-        NSString *path = [bundle pathForResource:@"Scales" ofType:@"plist" inDirectory:@"" forLocalization:@"en"];
+        NSString *path = [self pathToResource:@"Scales.plist" inBundleNamed:@"RIOFuzzyTime.bundle"];
         NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
         scales = [dict objectForKey:@"scales"];
     }
     
     return scales;
+}
+
++ (NSString *)pathToResource:(NSString *)resource inBundleNamed:(NSString *)bundleName
+{
+    NSBundle *bundle = [NSBundle bundleWithPath:bundleName];
+    NSString *preferredLocalization = [[bundle preferredLocalizations] objectAtIndex:0];
+    NSString *path = [bundle pathForResource:resource ofType:nil inDirectory:nil forLocalization:preferredLocalization];
+    
+    return path;
 }
 
 
