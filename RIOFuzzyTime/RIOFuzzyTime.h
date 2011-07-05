@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSDate+RIOFuzzyTime.h"
+
 
 @interface RIOFuzzyTime : NSObject
 
