@@ -8,6 +8,7 @@
 
 #import "RIOFuzzyTime.h"
 
+
 @interface RIOFuzzyTime ()
 
 + (NSArray *)scales;
@@ -69,13 +70,14 @@
     return scales;
 }
 
-+ (NSString *)pathToResource:(NSString *)resource inBundleNamed:(NSString *)bundleName
++ (NSString *)pathToResource:(NSString *)resourceName inBundleNamed:(NSString *)bundleName
 {
-    NSBundle *bundle = [NSBundle bundleWithPath:bundleName];
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:bundleName ofType:nil];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     NSString *preferredLocalization = [[bundle preferredLocalizations] objectAtIndex:0];
-    NSString *path = [bundle pathForResource:resource ofType:nil inDirectory:nil forLocalization:preferredLocalization];
+    NSString *resourcePath = [bundle pathForResource:resourceName ofType:nil inDirectory:nil forLocalization:preferredLocalization];
     
-    return path;
+    return resourcePath;
 }
 
 

@@ -12,6 +12,11 @@
 
 @interface RIOFuzzyTime : NSObject
 
+/**
+ Returns fuzzy time for a given time interval
+ @param timeInterval Seconds since/to a given event
+ @returns MISSING
+ */
 + (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)timeInterval;
 
 @end

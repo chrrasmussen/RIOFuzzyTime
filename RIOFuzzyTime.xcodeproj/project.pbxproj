@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		6906DB1513C3C96B00B9CE9A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6906DB3013C3D70C00B9CE9A /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		6919A4A113C0ACAF00523264 /* RIOFuzzyTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIOFuzzyTime.h; sourceTree = "<group>"; };
 		6919A4A213C0ACAF00523264 /* RIOFuzzyTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIOFuzzyTime.m; sourceTree = "<group>"; };
 		6919A4AD13C0B91A00523264 /* RIOFuzzyTime.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RIOFuzzyTime.bundle; sourceTree = "<group>"; };
@@ -69,9 +70,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6906DB1613C3D1C300B9CE9A /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				6906DB3013C3D70C00B9CE9A /* index.html */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
 		6955E35D13A99084003A6098 = {
 			isa = PBXGroup;
 			children = (
+				6906DB1613C3D1C300B9CE9A /* Docs */,
 				6906DB1513C3C96B00B9CE9A /* LICENSE */,
 				694CE8F313BE395300F7BF8F /* README.md */,
 				6919A4AD13C0B91A00523264 /* RIOFuzzyTime.bundle */,

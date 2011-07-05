@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NSDate (RIOFuzzyTime)
 
+/**
+ A convenience method to obtain fuzzy time for an NSDate
+ @returns MISSING
+ */
 - (NSString *)fuzzyTime;
 
 @end
