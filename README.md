@@ -2,10 +2,12 @@
 
 Calculates the time since/to a given NSDate. E.g. 30 minutes ago, yesterday or 2 months from now.
 
-The goal for this library is to support multiple languages. As of today it only supports English and Norwegian. If you can help, please contact me.
+The goal for this library is to support multiple languages. As of today it only supports English and Norwegian. If you want to contribute to the translations, please feel free to contact me.
 
 
 ## Installation
+
+### In Xcode 4
 
 Coming soon!
 
@@ -19,7 +21,7 @@ NSDate *now = [NSDate date];
 NSLog(@"Fuzzy time: %@", [now fuzzyTime]);
 ```
 
-Returns:
+Outputs:
 
 ```
 Fuzzy time: Just now
@@ -31,7 +33,7 @@ Fuzzy time: Just now
 NSLog(@"Fuzzy time: %@", [RIOFuzzyTime fuzzyTimeForTimeInterval:-1234.0]);
 ```
 
-Returns:
+Outputs:
 
 ```
 Fuzzy time: 20 minutes ago
@@ -101,4 +103,4 @@ It is important that the limit of one category is higher than or equal to the sc
 
 ## License
 
-The license for this library is currently undetermined. Either the Apache license or the BSD license will be chosen.
+This library is licensed under the Apache 2.0 license. See LICENSE for more details.
