@@ -2,7 +2,7 @@
 
 Calculates the time since/to a given NSDate. E.g. 30 minutes ago, yesterday or 2 months from now.
 
-The goal for this library is to support multiple languages. As of today it only supports English and Norwegian. If you want to contribute to the translations, please feel free to contact me.
+The goal for this library is to support multiple languages. As of today it only supports English and Norwegian. If you want to contribute to the translations or the code, please feel free to contact me.
 
 
 ## Installation
@@ -17,9 +17,9 @@ Perform the steps of either section 1A or 1B depending on whether you need sourc
 
 1. Open Terminal.app
 2. Navigate to your project's root folder (where the .xcodeproj-file is located)
-3. Type _`git init`_ (Skip this step if you already have chosen "Create local git repository for this project")
-4. Type _`git submodule add git://github.com/skohorn/RIOFuzzyTime.git Components/RIOFuzzyTime`_
-5. Type _`git submodule update --init --recursive`_
+3. Type `git init` (Skip this step if you opted for: Create local git repository for this project)
+4. Type `git submodule add git://github.com/skohorn/RIOFuzzyTime.git Components/RIOFuzzyTime`
+5. Type `git submodule update --init --recursive`
 
 ### 1B - Without source control
 
@@ -35,11 +35,9 @@ Perform the steps of either section 1A or 1B depending on whether you need sourc
 6. Add _RIOFuzzyTime.a_ in the Link Binary With Libraries-section
 7. Add _RIOFuzzyTime.bundle_ in the Copy Bundle Resources-section
 
-
 ***
 
-
-If you want a better explanation of each step, please check out [The state of iOS Open Source Ð and what to do about it!](http://blog.jayway.com/2011/05/16/the-state-of-ios-open-source-and-what-to-do-about-it/) from the awesome [Jayway Team Blog](http://blog.jayway.com/).
+If you want a better explanation of each step, please check out [The state of iOS Open Source - and what to do about it!](http://blog.jayway.com/2011/05/16/the-state-of-ios-open-source-and-what-to-do-about-it/) from the awesome [Jayway Team Blog](http://blog.jayway.com/).
 
 
 ## Examples of Usage
@@ -130,7 +128,7 @@ Fuzzy time: 20 minutes ago
     </tr>
 </table>
 
-It is important that the limit of one category is higher than or equal to the scale of the next category. For example: In 1 month there are approximately 30.4375 days (2629800 seconds). In 4 weeks there are only 28 days (2419200 seconds). To accommodate this, we must add another week (which gives a total of 3024000 seconds) to the limit. Otherwise, an input of 29 days will return 0 months.
+It is important that the limit of one category is higher than or equal to the scale of the next category. For example: In 1 month there are approximately 30.4375 days (2629800 seconds). In 4 weeks there are only 28 days (2419200 seconds). To accommodate this I have set the limit for the week category to about 4.35 weeks == 1 month (2629800 seconds). Otherwise, an input of 29 days would return 0 months.
 
 
 ## License
