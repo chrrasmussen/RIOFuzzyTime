@@ -7,37 +7,40 @@ The goal for this library is to support multiple languages. As of today it only 
 
 ## Installation
 
-### In Xcode 4
-
 __Note: Preliminary instructions__
 
-Perform the steps of either section 1A or 1B depending on whether you need source control or not
+These steps are targeted for Xcode 4, but they may also work for earlier versions.
 
-#### 1A - Using source control
+Perform the steps of either section 1A or 1B depending on whether you need source control or not.
+
+### 1A - Using source control
 
 1. Open Terminal.app
 2. Navigate to your project's root folder (where the .xcodeproj-file is located)
-3. Type _`git init`_
-   (Skip this step if you already have chosen "Create local git repository for this project")
+3. Type _`git init`_ (Skip this step if you already have chosen "Create local git repository for this project")
 4. Type _`git submodule add git://github.com/skohorn/RIOFuzzyTime.git Components/RIOFuzzyTime`_
 5. Type _`git submodule update --init --recursive`_
 
-#### 1B - Without source control
+### 1B - Without source control
 
 1. Instructions coming soon!
 
-#### 2 - In Xcode 4
+### 2 - In Xcode
 
 1. Drag the _RIOFuzzyTime.xcodeproj_ into your Xcode-project (either as a sub-project or as a new workspace)
 2. Open the Build Settings in your project's settings
-3. Add _-all_load_ to the Other Linker Flags-setting
-4. Add _Components_ and enable Recursive in the User Header Search Paths-setting
+3. Add `-all_load` to the Other Linker Flags-setting
+4. Add `Components` and enable Recursive in the User Header Search Paths-setting
 5. Open the Build Phases in your project's settings
 6. Add _RIOFuzzyTime.a_ in the Link Binary With Libraries-section
 7. Add _RIOFuzzyTime.bundle_ in the Copy Bundle Resources-section
 
 
-If you want a better explanation of each step, please check out the awesome [Jayway Team Blog](http://blog.jayway.com/2011/05/16/the-state-of-ios-open-source-and-what-to-do-about-it/).
+***
+
+
+If you want a better explanation of each step, please check out [The state of iOS Open Source Ð and what to do about it!](http://blog.jayway.com/2011/05/16/the-state-of-ios-open-source-and-what-to-do-about-it/) from the awesome [Jayway Team Blog](http://blog.jayway.com/).
+
 
 ## Examples of Usage
 
