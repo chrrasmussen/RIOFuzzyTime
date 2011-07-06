@@ -7,6 +7,7 @@
 //
 
 #import "RIOFuzzyTime.h"
+#import "NSBundle+RIOFuzzyTime.h"
 
 
 @interface RIOFuzzyTime ()
@@ -72,13 +73,18 @@
 
 + (NSString *)pathToResource:(NSString *)resourceName inBundleNamed:(NSString *)bundleName
 {
+    // Find the bundle
     NSString *bundlePath = [[NSBundle mainBundle] pathForResource:bundleName ofType:nil];
+    if (bundlePath == nil)
+        bundlePath = bundleName; // Workaround to fix the unit tests
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-    NSString *preferredLocalization = [[bundle preferredLocalizations] objectAtIndex:0];
-    NSString *resourcePath = [bundle pathForResource:resourceName ofType:nil inDirectory:nil forLocalization:preferredLocalization];
     
+    // Return the resource
+    NSString *resourcePath = [bundle pathForResourceInPreferredLanguage:resourceName];
     return resourcePath;
 }
+
+
 
 
 
