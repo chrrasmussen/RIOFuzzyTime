@@ -36,6 +36,7 @@
 		6906DB3013C3D70C00B9CE9A /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		6906DB3713C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+RIOFuzzyTime.h"; sourceTree = "<group>"; };
 		6906DB3813C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+RIOFuzzyTime.m"; sourceTree = "<group>"; };
+		6906DB4213C3FE1C00B9CE9A /* temp.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = temp.html; sourceTree = "<group>"; };
 		6919A4A113C0ACAF00523264 /* RIOFuzzyTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIOFuzzyTime.h; sourceTree = "<group>"; };
 		6919A4A213C0ACAF00523264 /* RIOFuzzyTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIOFuzzyTime.m; sourceTree = "<group>"; };
 		6919A4AD13C0B91A00523264 /* RIOFuzzyTime.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RIOFuzzyTime.bundle; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				6906DB3013C3D70C00B9CE9A /* index.html */,
+				6906DB4213C3FE1C00B9CE9A /* temp.html */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";
