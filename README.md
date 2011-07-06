@@ -14,7 +14,9 @@ Coming soon!
 
 ## Examples of Usage
 
-### Using the NSDate-category
+Remember to import _RIOFuzzyTime.h_ before using any of these methods.
+
+### NSDate category method
 
 ```obj-c
 NSDate *now = [NSDate date];
@@ -27,7 +29,7 @@ Outputs:
 Fuzzy time: Just now
 ```
 
-### Using the RIOFuzzyTime class
+### RIOFuzzyTime static method
 
 ```obj-c
 NSLog(@"Fuzzy time: %@", [RIOFuzzyTime fuzzyTimeForTimeInterval:-1234.0]);
