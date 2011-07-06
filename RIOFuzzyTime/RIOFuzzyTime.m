@@ -13,7 +13,7 @@
 @interface RIOFuzzyTime ()
 
 + (NSArray *)scales;
-+ (NSString *)pathToResource:(NSString *)resource inBundleNamed:(NSString *)bundleName;
++ (NSString *)pathForResource:(NSString *)resource inBundleNamed:(NSString *)bundleName;
 
 @end
 
@@ -25,16 +25,18 @@
     BOOL past = (timeInterval <= 0) ? YES : NO;
     NSTimeInterval absoluteTimeInterval = fabs(timeInterval);
     
+    // Loop through the scales until the limit exceeds the absolute time interval
     NSArray *scales = [self scales];
     for (NSDictionary *scale in scales)
     {
         NSUInteger limitValue = [[scale objectForKey:@"limit"] unsignedIntegerValue];
         if (limitValue > absoluteTimeInterval)
         {
+            // Determine the appropriate format and insert the scaled time interval
             NSUInteger scaleValue = [[scale objectForKey:@"scale"] unsignedIntegerValue];
             NSUInteger scaledTimeInterval = absoluteTimeInterval / scaleValue;
             
-            NSString *format;
+            NSString *format = nil;
             if (scaledTimeInterval != 1)
             {
                 // Plural
@@ -63,7 +65,7 @@
     static NSArray *scales = nil;
     if (scales == nil)
     {
-        NSString *path = [self pathToResource:@"Scales.plist" inBundleNamed:@"RIOFuzzyTime.bundle"];
+        NSString *path = [self pathForResource:@"Scales.plist" inBundleNamed:@"RIOFuzzyTime.bundle"];
         NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
         scales = [dict objectForKey:@"scales"];
     }
@@ -71,7 +73,7 @@
     return scales;
 }
 
-+ (NSString *)pathToResource:(NSString *)resourceName inBundleNamed:(NSString *)bundleName
++ (NSString *)pathForResource:(NSString *)resourceName inBundleNamed:(NSString *)bundleName
 {
     // Find the bundle
     NSString *bundlePath = [[NSBundle mainBundle] pathForResource:bundleName ofType:nil];
@@ -79,13 +81,9 @@
         bundlePath = bundleName; // Workaround to fix the unit tests
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     
-    // Return the resource
+    // Return the resource path
     NSString *resourcePath = [bundle pathForResourceInPreferredLanguage:resourceName];
     return resourcePath;
 }
-
-
-
-
 
 @end
