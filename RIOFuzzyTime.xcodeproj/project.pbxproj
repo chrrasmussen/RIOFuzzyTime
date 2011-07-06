@@ -79,8 +79,7 @@
 			children = (
 				6906DB3013C3D70C00B9CE9A /* index.html */,
 			);
-			name = Documentation;
-			path = Docs;
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 		6955E35D13A99084003A6098 = {
