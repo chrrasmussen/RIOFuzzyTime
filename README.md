@@ -128,7 +128,7 @@ Fuzzy time: 20 minutes ago
     </tr>
 </table>
 
-It is important that the limit of one category is higher than or equal to the scale of the next category. For example: In 1 month there are approximately 30.4375 days (2629800 seconds). In 4 weeks there are only 28 days (2419200 seconds). To accommodate this I have set the limit for the week category to about 4.35 weeks == 1 month (2629800 seconds). Otherwise, an input of 29 days would return 0 months.
+It is important that the limit of one category is higher than or equal to the scale of the next category. For example: In 1 month there are approximately 30.4375 days (2629800 seconds). In 4 weeks there are only 28 days (2419200 seconds). To accommodate this I have set the limit for the week category to about 4.35 weeks == 1 month (2629800 seconds). Otherwise, an input of 29 days would have returned 0 months.
 
 
 ## License
