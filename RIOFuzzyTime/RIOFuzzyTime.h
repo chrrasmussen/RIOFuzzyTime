@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "NSDate+RIOFuzzyTime.h"
 
-
+/**
+ Summary of RIOFuzzyTime
+ */
 @interface RIOFuzzyTime : NSObject
 
 /**

@@ -16,8 +16,7 @@ These steps are targeted for Xcode 4, but they may also work for earlier version
 Perform the steps of either section 1A or 1B depending on whether you need source control or not.
 
 
-1A - Using source control
--------------------------
+### 1A - Using source control
 
 1. Open Terminal.app
 2. Navigate to your project's root folder (where the .xcodeproj-file is located)
@@ -26,14 +25,12 @@ Perform the steps of either section 1A or 1B depending on whether you need sourc
 5. Type `git submodule update --init --recursive`
 
 
-1B - Without source control
----------------------------
+### 1B - Without source control
 
 _Instructions coming soon!_
 
 
-2 - In Xcode
-------------
+### 2 - In Xcode
 
 1. Drag the _RIOFuzzyTime.xcodeproj_ into your Xcode-project (either as a sub-project or as a new workspace)
 2. Open the Build Settings in your project's settings
