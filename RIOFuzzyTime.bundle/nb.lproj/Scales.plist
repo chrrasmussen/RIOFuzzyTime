@@ -32,9 +32,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>1 minutt siden</string>
+				<string>Et minutt siden</string>
 				<key>future</key>
-				<string>1 minutt fra nå</string>
+				<string>Et minutt fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -52,9 +52,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>1 time siden</string>
+				<string>En time siden</string>
 				<key>future</key>
-				<string>1 time fra nå</string>
+				<string>En time fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -72,9 +72,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>I går</string>
+				<string>En dag siden</string>
 				<key>future</key>
-				<string>I morgen</string>
+				<string>En dag fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -92,9 +92,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Forrige uke</string>
+				<string>En uke siden</string>
 				<key>future</key>
-				<string>Neste uke</string>
+				<string>En uke fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -112,9 +112,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Forrige måned</string>
+				<string>En måned siden</string>
 				<key>future</key>
-				<string>Neste måned</string>
+				<string>En måned fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -132,9 +132,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>I fjor</string>
+				<string>Et år side siden</string>
 				<key>future</key>
-				<string>Neste år</string>
+				<string>Et år fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -152,9 +152,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Forrige århundre</string>
+				<string>Et århundre siden</string>
 				<key>future</key>
-				<string>Neste århundre</string>
+				<string>Et århundre fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>

@@ -32,9 +32,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>1 minute ago</string>
+				<string>About a minute ago</string>
 				<key>future</key>
-				<string>1 minute since now</string>
+				<string>About a minute since now</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -52,9 +52,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>1 hour ago</string>
+				<string>About an hour ago</string>
 				<key>future</key>
-				<string>1 hour since now</string>
+				<string>About an hour since now</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -72,9 +72,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Yesterday</string>
+				<string>About a day ago</string>
 				<key>future</key>
-				<string>Tomorrow</string>
+				<string>About a day since now</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -92,9 +92,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Last week</string>
+				<string>About a week ago</string>
 				<key>future</key>
-				<string>Next week</string>
+				<string>About a week since now</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -112,9 +112,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Last month</string>
+				<string>About a month ago</string>
 				<key>future</key>
-				<string>Next month</string>
+				<string>About a month since now</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -132,9 +132,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Last year</string>
+				<string>About a year ago</string>
 				<key>future</key>
-				<string>Next year</string>
+				<string>About a year since now</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
@@ -152,9 +152,9 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Last century</string>
+				<string>About a century ago</string>
 				<key>future</key>
-				<string>Next century</string>
+				<string>About a century since now</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
