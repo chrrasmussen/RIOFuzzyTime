@@ -40,7 +40,9 @@ _Instructions coming soon!_
 6. Add _RIOFuzzyTime.a_ in the Link Binary With Libraries-section
 7. Add _RIOFuzzyTime.bundle_ in the Copy Bundle Resources-section
 
-***
+
+---
+
 
 If you want a better explanation of each step, please check out [The state of iOS Open Source - and what to do about it!](http://blog.jayway.com/2011/05/16/the-state-of-ios-open-source-and-what-to-do-about-it/) from the awesome [Jayway Team Blog](http://blog.jayway.com/).
 
@@ -51,8 +53,7 @@ Examples of Usage
 Remember to import _RIOFuzzyTime.h_ before using any of these methods.
 
 
-NSDate category method
-----------------------
+### NSDate category method
 
 ```obj-c
 NSDate *now = [NSDate date];
@@ -66,8 +67,7 @@ Fuzzy time: Just now
 ```
 
 
-RIOFuzzyTime static method
---------------------------
+### RIOFuzzyTime static method
 
 ```obj-c
 NSLog(@"Fuzzy time: %@", [RIOFuzzyTime fuzzyTimeForTimeInterval:-1234.0]);
