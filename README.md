@@ -1,7 +1,7 @@
 About RIOFuzzyTime
 ==================
 
-Calculates the time since/to a given NSDate. E.g. 30 minutes ago, yesterday or 2 months from now.
+Calculates the time since/to a given NSDate. E.g. `About 30 minutes ago`, `About a day ago` or `About 2 months from now`.
 
 The goal for this library is to support multiple languages. As of today it only supports English and Norwegian. If you want to contribute to the translations or the code, please feel free to contact me.
 
