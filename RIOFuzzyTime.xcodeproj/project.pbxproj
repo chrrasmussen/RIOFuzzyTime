@@ -188,7 +188,7 @@
 				6955E37013A99084003A6098 /* Sources */,
 				6955E37113A99084003A6098 /* Frameworks */,
 				6955E37213A99084003A6098 /* Resources */,
-				6955E37313A99084003A6098 /* ShellScript */,
+				6955E37313A99084003A6098 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -238,13 +238,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6955E37313A99084003A6098 /* ShellScript */ = {
+		6955E37313A99084003A6098 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +344,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROJECT_VERSION = 1.0;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -354,6 +356,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROJECT_VERSION = 1.0;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

@@ -10,14 +10,20 @@
 #import "NSDate+RIOFuzzyTime.h"
 
 /**
- Summary of RIOFuzzyTime
+ Summary of RIOFuzzyTime.
+ Test.
  */
 @interface RIOFuzzyTime : NSObject
 
+/** @name Convenience Methods */
+
 /**
- Returns fuzzy time for a given time interval
- @param timeInterval Seconds since/to a given event
- @returns MISSING
+ Returns fuzzy time for a given time interval.
+ 
+ Second paragraph.
+ 
+ @param timeInterval Seconds since/to a given event.
+ @returns A string containing the fuzzy time for the given time interval.
  */
 + (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)timeInterval;
 

@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-
+/**
+ NSBundle category summary
+ FIX
+ */
 @interface NSBundle (RIOFuzzyTime)
 
 /**
