@@ -15,7 +15,7 @@
 - (NSString *)fuzzyTime
 {
     NSTimeInterval timeInterval = [self timeIntervalSinceNow];
-    return [RIOFuzzyTime fuzzyTimeForTimeInterval:timeInterval];
+    return [RIOFuzzyTime fuzzyTimeStringWithTimeInterval:timeInterval];
 }
 
 @end

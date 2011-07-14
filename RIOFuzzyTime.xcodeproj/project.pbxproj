@@ -18,7 +18,7 @@
 		6955E38513A99084003A6098 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6955E38313A99084003A6098 /* InfoPlist.strings */; };
 		6955E39813A990D3003A6098 /* NSDate+RIOFuzzyTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 6955E39613A990D3003A6098 /* NSDate+RIOFuzzyTime.h */; settings = {ATTRIBUTES = (); }; };
 		6955E39913A990D3003A6098 /* NSDate+RIOFuzzyTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6955E39713A990D3003A6098 /* NSDate+RIOFuzzyTime.m */; };
-		6955E39D13A992EE003A6098 /* RIOFuzzyTimeShould.m in Sources */ = {isa = PBXBuildFile; fileRef = 6955E39C13A992EE003A6098 /* RIOFuzzyTimeShould.m */; };
+		6955E39D13A992EE003A6098 /* RIOFuzzyTimeEnglishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6955E39C13A992EE003A6098 /* RIOFuzzyTimeEnglishTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,8 @@
 		6955E38413A99084003A6098 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6955E39613A990D3003A6098 /* NSDate+RIOFuzzyTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RIOFuzzyTime.h"; sourceTree = "<group>"; };
 		6955E39713A990D3003A6098 /* NSDate+RIOFuzzyTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RIOFuzzyTime.m"; sourceTree = "<group>"; };
-		6955E39B13A992EE003A6098 /* RIOFuzzyTimeShould.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIOFuzzyTimeShould.h; sourceTree = "<group>"; };
-		6955E39C13A992EE003A6098 /* RIOFuzzyTimeShould.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIOFuzzyTimeShould.m; sourceTree = "<group>"; };
+		6955E39B13A992EE003A6098 /* RIOFuzzyTimeEnglishTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIOFuzzyTimeEnglishTests.h; sourceTree = "<group>"; };
+		6955E39C13A992EE003A6098 /* RIOFuzzyTimeEnglishTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIOFuzzyTimeEnglishTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +128,8 @@
 		6955E38013A99084003A6098 /* RIOFuzzyTimeTests */ = {
 			isa = PBXGroup;
 			children = (
-				6955E39B13A992EE003A6098 /* RIOFuzzyTimeShould.h */,
-				6955E39C13A992EE003A6098 /* RIOFuzzyTimeShould.m */,
+				6955E39B13A992EE003A6098 /* RIOFuzzyTimeEnglishTests.h */,
+				6955E39C13A992EE003A6098 /* RIOFuzzyTimeEnglishTests.m */,
 				6955E38113A99084003A6098 /* Supporting Files */,
 			);
 			path = RIOFuzzyTimeTests;
@@ -265,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6955E39D13A992EE003A6098 /* RIOFuzzyTimeShould.m in Sources */,
+				6955E39D13A992EE003A6098 /* RIOFuzzyTimeEnglishTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

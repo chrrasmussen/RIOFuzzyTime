@@ -20,7 +20,7 @@
 
 @implementation RIOFuzzyTime
 
-+ (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)timeInterval
++ (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)timeInterval
 {
     BOOL past = (timeInterval <= 0) ? YES : NO;
     NSTimeInterval absoluteTimeInterval = fabs(timeInterval);
@@ -57,6 +57,10 @@
     return [NSString stringWithFormat:@"Unsupported time interval (%f)", timeInterval];
 }
 
++ (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)timeInterval language:(NSString *)language
+{
+    return @"Not implemented";
+}
 
 #pragma mark - Private methods
 

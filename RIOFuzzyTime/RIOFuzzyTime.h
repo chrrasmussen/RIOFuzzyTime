@@ -25,6 +25,13 @@
  @param timeInterval Seconds since/to a given event.
  @returns A string containing the fuzzy time for the given time interval.
  */
-+ (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)timeInterval;
++ (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)timeInterval;
+
+/**
+ <#summary#>
+ @param <#param#> <#description#>
+ @returns <#description#>
+ */
++ (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)timeInterval language:(NSString *)language;
 
 @end
