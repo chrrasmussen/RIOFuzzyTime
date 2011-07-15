@@ -7,13 +7,21 @@
 //
 
 #import "RIOFuzzyTime.h"
-#import "NSBundle+RIOFuzzyTime.h"
+//#import "NSBundle+RIOFuzzyTime.h"
+
+
+#define kBundleName             @"RIOFuzzyTime.bundle"
+#define kScalesResourceName     @"Scales.plist"
+#define kScalesRootKey          @"scales"
 
 
 @interface RIOFuzzyTime ()
 
-+ (NSArray *)scales;
-+ (NSString *)pathForResource:(NSString *)resource inBundleNamed:(NSString *)bundleName;
++ (NSBundle *)bundle;
++ (NSString *)preferredLocalization;
++ (NSString *)localizationWithLocalization:(NSString *)localization;
++ (NSArray *)scalesWithLocalization:(NSString *)localization;
+//+ (NSString *)pathForResource:(NSString *)resource inBundleNamed:(NSString *)bundleName;
 
 @end
 
@@ -22,16 +30,16 @@
 
 + (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)timeInterval
 {
-    return [self fuzzyTimeStringWithTimeInterval:timeInterval language:nil];
+    return [self fuzzyTimeStringWithTimeInterval:timeInterval localization:nil];
 }
 
-+ (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)timeInterval language:(NSString *)language
++ (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)timeInterval localization:(NSString *)localization
 {
     BOOL past = (timeInterval <= 0) ? YES : NO;
     NSTimeInterval absoluteTimeInterval = fabs(timeInterval);
     
     // Loop through the scales until the limit exceeds the absolute time interval
-    NSArray *scales = [self scales];
+    NSArray *scales = [self scalesWithLocalization:localization];
     for (NSDictionary *scale in scales)
     {
         NSUInteger limitValue = [[scale objectForKey:@"limit"] unsignedIntegerValue];
@@ -64,30 +72,73 @@
 
 #pragma mark - Private methods
 
-+ (NSArray *)scales;
++ (NSBundle *)bundle
 {
-    static NSArray *scales = nil;
-    if (scales == nil)
+    static NSBundle *bundle = nil;
+    if (bundle == nil)
     {
-        NSString *path = [self pathForResource:@"Scales.plist" inBundleNamed:@"RIOFuzzyTime.bundle"];
-        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
-        scales = [dict objectForKey:@"scales"];
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:kBundleName ofType:nil];
+        if (bundlePath == nil)
+            bundlePath = kBundleName; // Workaround to fix the unit tests
+        bundle = [NSBundle bundleWithPath:bundlePath];
     }
+    
+    return bundle;
+}
+
++ (NSString *)preferredLocalization
+{
+    NSArray *availableLocalizations = [[RIOFuzzyTime bundle] localizations];
+    __block NSString *preferredLocalization = nil;
+    
+    NSArray *preferredLanguages = [NSLocale preferredLanguages];
+    [preferredLanguages enumerateObjectsUsingBlock:^(__strong id obj, NSUInteger idx, BOOL *stop) {
+        if ([availableLocalizations containsObject:obj]) {
+            preferredLocalization = obj;
+            *stop = YES;
+        }
+    }];
+    
+    return preferredLocalization;
+}
+
++ (NSString *)localizationWithLocalization:(NSString *)localization
+{
+    NSArray *availableLocalizations = [[RIOFuzzyTime bundle] localizations];
+    if ([availableLocalizations containsObject:localization])
+        return localization;
+    
+    return [RIOFuzzyTime preferredLocalization];
+}
+
++ (NSArray *)scalesWithLocalization:(NSString *)localization
+{
+//    static NSMutableDictionary *cachedScales = nil;
+//    if (cachedScales == nil)
+//        cachedScales = [[NSMutableDictionary alloc] init];
+//    
+//    if ([cachedScales objectForKey:localization] != nil)
+//        return []
+    NSString *selectedLocalization = [RIOFuzzyTime localizationWithLocalization:localization];
+    NSString *path = [[RIOFuzzyTime bundle] pathForResource:kScalesResourceName ofType:nil inDirectory:nil forLocalization:selectedLocalization];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSArray *scales = [dict objectForKey:kScalesRootKey];
     
     return scales;
 }
 
-+ (NSString *)pathForResource:(NSString *)resourceName inBundleNamed:(NSString *)bundleName
-{
-    // Find the bundle
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:bundleName ofType:nil];
-    if (bundlePath == nil)
-        bundlePath = bundleName; // Workaround to fix the unit tests
-    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-    
-    // Return the resource path
-    NSString *resourcePath = [bundle pathForResourceInPreferredLanguage:resourceName];
-    return resourcePath;
-}
+//+ (NSString *)pathForResource:(NSString *)resourceName inBundleNamed:(NSString *)bundleName
+//{
+//    // Find the bundle
+//
+//    
+//    // Return the resource path
+////    NSString *resourcePath = [bundle pathForResourceInPreferredLanguage:resourceName];
+//    NSString *resourcePath = 
+//    return resourcePath;
+//}
+
+
+
 
 @end

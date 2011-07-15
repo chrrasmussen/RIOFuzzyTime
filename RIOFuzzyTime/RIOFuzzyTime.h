@@ -32,6 +32,6 @@
  @param <#param#> <#description#>
  @returns <#description#>
  */
-+ (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)timeInterval language:(NSString *)language;
++ (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)timeInterval localization:(NSString *)localization;
 
 @end

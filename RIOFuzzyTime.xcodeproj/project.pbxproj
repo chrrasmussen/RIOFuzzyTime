@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6906DB3913C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 6906DB3713C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.h */; };
-		6906DB3A13C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906DB3813C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.m */; };
 		6919A4A313C0ACAF00523264 /* RIOFuzzyTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 6919A4A113C0ACAF00523264 /* RIOFuzzyTime.h */; settings = {ATTRIBUTES = (); }; };
 		6919A4A413C0ACAF00523264 /* RIOFuzzyTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6919A4A213C0ACAF00523264 /* RIOFuzzyTime.m */; };
 		6955E36C13A99084003A6098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955E36B13A99084003A6098 /* Foundation.framework */; };
@@ -33,8 +31,6 @@
 
 /* Begin PBXFileReference section */
 		6906DB1513C3C96B00B9CE9A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		6906DB3713C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+RIOFuzzyTime.h"; sourceTree = "<group>"; };
-		6906DB3813C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+RIOFuzzyTime.m"; sourceTree = "<group>"; };
 		6919A4A113C0ACAF00523264 /* RIOFuzzyTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIOFuzzyTime.h; sourceTree = "<group>"; };
 		6919A4A213C0ACAF00523264 /* RIOFuzzyTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIOFuzzyTime.m; sourceTree = "<group>"; };
 		6919A4AD13C0B91A00523264 /* RIOFuzzyTime.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RIOFuzzyTime.bundle; sourceTree = "<group>"; };
@@ -171,8 +167,6 @@
 				6919A4A213C0ACAF00523264 /* RIOFuzzyTime.m */,
 				6955E39613A990D3003A6098 /* NSDate+RIOFuzzyTime.h */,
 				6955E39713A990D3003A6098 /* NSDate+RIOFuzzyTime.m */,
-				6906DB3713C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.h */,
-				6906DB3813C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.m */,
 			);
 			path = RIOFuzzyTime;
 			sourceTree = "<group>";
@@ -205,7 +199,6 @@
 			files = (
 				6955E39813A990D3003A6098 /* NSDate+RIOFuzzyTime.h in Headers */,
 				6919A4A313C0ACAF00523264 /* RIOFuzzyTime.h in Headers */,
-				6906DB3913C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +302,6 @@
 			files = (
 				6955E39913A990D3003A6098 /* NSDate+RIOFuzzyTime.m in Sources */,
 				6919A4A413C0ACAF00523264 /* RIOFuzzyTime.m in Sources */,
-				6906DB3A13C3E3CD00B9CE9A /* NSBundle+RIOFuzzyTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
