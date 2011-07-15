@@ -9,12 +9,6 @@
 #import "RIOFuzzyTimeEnglishTests.h"
 #import "RIOFuzzyTime.h"
 
-//@interface RIOFuzzyTimeEnglishTests ()
-//
-//- (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)timeInterval;
-//
-//@end
-
 
 @implementation RIOFuzzyTimeEnglishTests
 
@@ -45,9 +39,9 @@
 
 - (void)testReturnJustNowFuture
 {
-    NSString *low  = [RIOFuzzyTime fuzzyTimeStringWithTimeInterval:0.5];
-    NSString *mid  = [RIOFuzzyTime fuzzyTimeStringWithTimeInterval:30.5];
-    NSString *high = [RIOFuzzyTime fuzzyTimeStringWithTimeInterval:59.5];
+    NSString *low  = [RIOFuzzyTime fuzzyTimeStringWithTimeInterval:0.0];
+    NSString *mid  = [RIOFuzzyTime fuzzyTimeStringWithTimeInterval:30.0];
+    NSString *high = [RIOFuzzyTime fuzzyTimeStringWithTimeInterval:59.0];
     
     STAssertEqualObjects(@"Just now", low, nil);
     STAssertEqualObjects(@"Just now", mid, nil);
@@ -412,15 +406,5 @@
     STAssertEqualObjects(@"About 9 centuries since now", mid, nil);
     STAssertEqualObjects(@"About 9 centuries since now", high, nil);
 }
-
-
-//#pragma mark - Private methods
-//
-//- (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)timeInterval
-//{
-//    NSDate *now = [NSDate date];
-//    NSDate *offsetDate = [now dateByAddingTimeInterval:timeInterval];
-//    return [offsetDate fuzzyTime];
-//}
 
 @end
