@@ -12,7 +12,7 @@
 
 @implementation NSDate (RIOFuzzyTime)
 
-- (NSString *)fuzzyTime
+- (NSString *)fuzzyTimeString
 {
     NSTimeInterval timeInterval = [self timeIntervalSinceNow];
     return [RIOFuzzyTime fuzzyTimeStringWithTimeInterval:timeInterval];

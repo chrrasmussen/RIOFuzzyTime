@@ -18,6 +18,18 @@
 
 @implementation RIOFuzzyTimeEnglishTests
 
+#pragma mark - Test NSDate category
+
+- (void)testNSDateCategory
+{
+    NSDate *now = [NSDate date];
+    NSDate *offsetDate = [now dateByAddingTimeInterval:-1800.0];
+    NSString *fuzzyTime = [offsetDate fuzzyTimeString];
+    
+    STAssertEqualObjects(@"About 30 minutes ago", fuzzyTime, nil);
+}
+
+
 #pragma mark - Test seconds
 
 - (void)testReturnJustNowPast

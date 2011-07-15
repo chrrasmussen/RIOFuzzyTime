@@ -17,6 +17,6 @@
  A convenience method to obtain fuzzy time for an NSDate
  @returns MISSING
  */
-- (NSString *)fuzzyTime;
+- (NSString *)fuzzyTimeString;
 
 @end
