@@ -38,6 +38,16 @@
 		6919A4A113C0ACAF00523264 /* RIOFuzzyTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIOFuzzyTime.h; sourceTree = "<group>"; };
 		6919A4A213C0ACAF00523264 /* RIOFuzzyTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIOFuzzyTime.m; sourceTree = "<group>"; };
 		6919A4AD13C0B91A00523264 /* RIOFuzzyTime.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RIOFuzzyTime.bundle; sourceTree = "<group>"; };
+		6923481E13CFBD1F000C0963 /* NSBundle(RIOFuzzyTime).html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = "NSBundle(RIOFuzzyTime).html"; sourceTree = "<group>"; };
+		6923481F13CFBD1F000C0963 /* NSDate(RIOFuzzyTime).html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = "NSDate(RIOFuzzyTime).html"; sourceTree = "<group>"; };
+		6923482113CFBD1F000C0963 /* RIOFuzzyTime.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = RIOFuzzyTime.html; sourceTree = "<group>"; };
+		6923482313CFBD1F000C0963 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		6923482413CFBD1F000C0963 /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = hierarchy.html; sourceTree = "<group>"; };
+		6923482613CFBD1F000C0963 /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		6923482713CFBD1F000C0963 /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		6923482813CFBD1F000C0963 /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		6923482913CFBD1F000C0963 /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		6923482A13CFBD1F000C0963 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = index.html; sourceTree = "<group>"; };
 		694CE8F313BE395300F7BF8F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		6955E36813A99084003A6098 /* libRIOFuzzyTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRIOFuzzyTime.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6955E36B13A99084003A6098 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,8 +86,50 @@
 		6906DB1613C3D1C300B9CE9A /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
+				6923481D13CFBD1F000C0963 /* Categories */,
+				6923482013CFBD1F000C0963 /* Classes */,
+				6923482213CFBD1F000C0963 /* css */,
+				6923482513CFBD1F000C0963 /* img */,
+				6923482413CFBD1F000C0963 /* hierarchy.html */,
+				6923482A13CFBD1F000C0963 /* index.html */,
 			);
 			path = Documentation;
+			sourceTree = "<group>";
+		};
+		6923481D13CFBD1F000C0963 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6923481E13CFBD1F000C0963 /* NSBundle(RIOFuzzyTime).html */,
+				6923481F13CFBD1F000C0963 /* NSDate(RIOFuzzyTime).html */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		6923482013CFBD1F000C0963 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6923482113CFBD1F000C0963 /* RIOFuzzyTime.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6923482213CFBD1F000C0963 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				6923482313CFBD1F000C0963 /* styles.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		6923482513CFBD1F000C0963 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				6923482613CFBD1F000C0963 /* button_bar_background.png */,
+				6923482713CFBD1F000C0963 /* disclosure.png */,
+				6923482813CFBD1F000C0963 /* disclosure_open.png */,
+				6923482913CFBD1F000C0963 /* title_background.png */,
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 		6955E35D13A99084003A6098 = {
