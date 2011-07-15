@@ -7,7 +7,6 @@
 //
 
 #import "RIOFuzzyTime.h"
-//#import "NSBundle+RIOFuzzyTime.h"
 
 
 #define kBundleName             @"RIOFuzzyTime.bundle"
@@ -17,11 +16,10 @@
 
 @interface RIOFuzzyTime ()
 
++ (NSArray *)scalesWithLocalization:(NSString *)localization;
 + (NSBundle *)bundle;
 + (NSString *)preferredLocalization;
 + (NSString *)localizationWithLocalization:(NSString *)localization;
-+ (NSArray *)scalesWithLocalization:(NSString *)localization;
-//+ (NSString *)pathForResource:(NSString *)resource inBundleNamed:(NSString *)bundleName;
 
 @end
 
@@ -72,6 +70,16 @@
 
 #pragma mark - Private methods
 
++ (NSArray *)scalesWithLocalization:(NSString *)localization
+{
+    NSString *selectedLocalization = [RIOFuzzyTime localizationWithLocalization:localization];
+    NSString *path = [[RIOFuzzyTime bundle] pathForResource:kScalesResourceName ofType:nil inDirectory:nil forLocalization:selectedLocalization];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSArray *scales = [dict objectForKey:kScalesRootKey];
+    
+    return scales;
+}
+
 + (NSBundle *)bundle
 {
     static NSBundle *bundle = nil;
@@ -110,35 +118,5 @@
     
     return [RIOFuzzyTime preferredLocalization];
 }
-
-+ (NSArray *)scalesWithLocalization:(NSString *)localization
-{
-//    static NSMutableDictionary *cachedScales = nil;
-//    if (cachedScales == nil)
-//        cachedScales = [[NSMutableDictionary alloc] init];
-//    
-//    if ([cachedScales objectForKey:localization] != nil)
-//        return []
-    NSString *selectedLocalization = [RIOFuzzyTime localizationWithLocalization:localization];
-    NSString *path = [[RIOFuzzyTime bundle] pathForResource:kScalesResourceName ofType:nil inDirectory:nil forLocalization:selectedLocalization];
-    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
-    NSArray *scales = [dict objectForKey:kScalesRootKey];
-    
-    return scales;
-}
-
-//+ (NSString *)pathForResource:(NSString *)resourceName inBundleNamed:(NSString *)bundleName
-//{
-//    // Find the bundle
-//
-//    
-//    // Return the resource path
-////    NSString *resourcePath = [bundle pathForResourceInPreferredLanguage:resourceName];
-//    NSString *resourcePath = 
-//    return resourcePath;
-//}
-
-
-
 
 @end
