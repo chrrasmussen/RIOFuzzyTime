@@ -7,6 +7,7 @@
 //
 
 #import "RIOFuzzyTime.h"
+#import "NSBundle+RIOFuzzyTime.h"
 
 
 #define kBundleName             @"RIOFuzzyTime.bundle"
@@ -18,8 +19,6 @@
 
 + (NSArray *)scalesWithLocalization:(NSString *)localization;
 + (NSBundle *)bundle;
-+ (NSString *)preferredLocalization;
-+ (NSString *)localizationWithLocalization:(NSString *)localization;
 
 @end
 
@@ -68,13 +67,19 @@
     return [NSString stringWithFormat:@"Unsupported time interval (%f)", timeInterval];
 }
 
+
 #pragma mark - Private methods
 
 + (NSArray *)scalesWithLocalization:(NSString *)localization
 {
-    NSString *selectedLocalization = [RIOFuzzyTime localizationWithLocalization:localization];
-    NSString *path = [[RIOFuzzyTime bundle] pathForResource:kScalesResourceName ofType:nil inDirectory:nil forLocalization:selectedLocalization];
-    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    // Retreive the URL to the bundle with the desired localization
+    NSBundle *bundle = [RIOFuzzyTime bundle];
+    if (localization == nil)
+        localization = [bundle preferredLocalization];
+    NSURL *url = [bundle URLForResource:kScalesResourceName withExtension:nil subdirectory:nil localization:localization];
+    
+    // Get the contents of file
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfURL:url];
     NSArray *scales = [dict objectForKey:kScalesRootKey];
     
     return scales;
@@ -94,29 +99,5 @@
     return bundle;
 }
 
-+ (NSString *)preferredLocalization
-{
-    NSArray *availableLocalizations = [[RIOFuzzyTime bundle] localizations];
-    __block NSString *preferredLocalization = nil;
-    
-    NSArray *preferredLanguages = [NSLocale preferredLanguages];
-    [preferredLanguages enumerateObjectsUsingBlock:^(__strong id obj, NSUInteger idx, BOOL *stop) {
-        if ([availableLocalizations containsObject:obj]) {
-            preferredLocalization = obj;
-            *stop = YES;
-        }
-    }];
-    
-    return preferredLocalization;
-}
-
-+ (NSString *)localizationWithLocalization:(NSString *)localization
-{
-    NSArray *availableLocalizations = [[RIOFuzzyTime bundle] localizations];
-    if ([availableLocalizations containsObject:localization])
-        return localization;
-    
-    return [RIOFuzzyTime preferredLocalization];
-}
 
 @end
