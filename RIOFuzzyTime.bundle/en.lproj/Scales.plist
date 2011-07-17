@@ -39,9 +39,9 @@
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>About %d minutes ago</string>
+				<string>%d minutes ago</string>
 				<key>future</key>
-				<string>About %d minutes since now</string>
+				<string>%d minutes since now</string>
 			</dict>
 		</dict>
 		<dict>
@@ -59,9 +59,9 @@
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>About %d hours ago</string>
+				<string>%d hours ago</string>
 				<key>future</key>
-				<string>About %d hours since now</string>
+				<string>%d hours since now</string>
 			</dict>
 		</dict>
 		<dict>
@@ -79,9 +79,9 @@
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>About %d days ago</string>
+				<string>%d days ago</string>
 				<key>future</key>
-				<string>About %d days since now</string>
+				<string>%d days since now</string>
 			</dict>
 		</dict>
 		<dict>
@@ -99,9 +99,9 @@
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>About %d weeks ago</string>
+				<string>%d weeks ago</string>
 				<key>future</key>
-				<string>About %d weeks since now</string>
+				<string>%d weeks since now</string>
 			</dict>
 		</dict>
 		<dict>
@@ -119,9 +119,9 @@
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>About %d months ago</string>
+				<string>%d months ago</string>
 				<key>future</key>
-				<string>About %d months since now</string>
+				<string>%d months since now</string>
 			</dict>
 		</dict>
 		<dict>
@@ -139,9 +139,9 @@
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>About %d years ago</string>
+				<string>%d years ago</string>
 				<key>future</key>
-				<string>About %d years since now</string>
+				<string>%d years since now</string>
 			</dict>
 		</dict>
 		<dict>
@@ -159,9 +159,9 @@
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>About %d centuries ago</string>
+				<string>%d centuries ago</string>
 				<key>future</key>
-				<string>About %d centuries since now</string>
+				<string>%d centuries since now</string>
 			</dict>
 		</dict>
 	</array>
