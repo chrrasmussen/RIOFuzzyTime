@@ -36,7 +36,9 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/fuzzyTimeForTimeInterval:">&nbsp;&nbsp;&nbsp;&nbsp;+ fuzzyTimeForTimeInterval:</option>
+	<option value="//api/name/fuzzyTimeStringWithTimeInterval:">&nbsp;&nbsp;&nbsp;&nbsp;+ fuzzyTimeStringWithTimeInterval:</option>
+	
+	<option value="//api/name/fuzzyTimeStringWithTimeInterval:localization:">&nbsp;&nbsp;&nbsp;&nbsp;+ fuzzyTimeStringWithTimeInterval:localization:</option>
 	
 	
 	
@@ -56,7 +58,7 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Convenience Methods">Convenience Methods</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Calulating the Fuzzy Time">Calulating the Fuzzy Time</a></span></li>
 	
 </ul></li>
 
@@ -68,7 +70,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fuzzyTimeForTimeInterval:">fuzzyTimeForTimeInterval:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fuzzyTimeStringWithTimeInterval:">fuzzyTimeStringWithTimeInterval:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fuzzyTimeStringWithTimeInterval:localization:">fuzzyTimeStringWithTimeInterval:localization:</a></span></li>
 	
 </ul></li>
 
@@ -109,8 +113,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Summary of <a href="RIOFuzzyTime.html">RIOFuzzyTime</a>.
-Test.</p>
+						<p>The <a href="RIOFuzzyTime.html">RIOFuzzyTime</a> class declare two methods to calculate the fuzzy time for a given time interval. E.g. About 30 minutes ago, About a day ago or About 2 months from now.</p>
 					</div>
 					
 					
@@ -122,14 +125,21 @@ Test.</p>
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Convenience Methods" name="task_Convenience Methods"></a>
+						<a title="Calulating the Fuzzy Time" name="task_Calulating the Fuzzy Time"></a>
 						
-<h3 class="subsubtitle task-title">Convenience Methods</h3>
+<h3 class="subsubtitle task-title">Calulating the Fuzzy Time</h3>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/fuzzyTimeForTimeInterval:">+&nbsp;fuzzyTimeForTimeInterval:</a></code>
-		<span class="tooltip"><p>Returns fuzzy time for a given time interval.</p></span>
+		<code><a href="#//api/name/fuzzyTimeStringWithTimeInterval:">+&nbsp;fuzzyTimeStringWithTimeInterval:</a></code>
+		<span class="tooltip"><p>Returns a string containing the fuzzy time for the given time interval using the preferred localization.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fuzzyTimeStringWithTimeInterval:localization:">+&nbsp;fuzzyTimeStringWithTimeInterval:localization:</a></code>
+		<span class="tooltip"><p>Returns a string containing the fuzzy time for the given time interval and localization.</p></span>
 	</span>
 	
 	
@@ -149,17 +159,17 @@ Test.</p>
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/fuzzyTimeForTimeInterval:" title="fuzzyTimeForTimeInterval:"></a>
-	<h3 class="subsubtitle method-title">fuzzyTimeForTimeInterval:</h3>
+	<a name="//api/name/fuzzyTimeStringWithTimeInterval:" title="fuzzyTimeStringWithTimeInterval:"></a>
+	<h3 class="subsubtitle method-title">fuzzyTimeStringWithTimeInterval:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns fuzzy time for a given time interval.</p>
+		<p>Returns a string containing the fuzzy time for the given time interval using the preferred localization.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>+ (NSString *)fuzzyTimeForTimeInterval:(NSTimeInterval)<em>timeInterval</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)<em>timeInterval</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
@@ -167,7 +177,7 @@ Test.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>timeInterval</em></dt>
-			<dd><p>Seconds since/to a given event.</p></dd>
+			<dd><p>Seconds since/to a given event. The time interval value can either be positive (the future) or negative (the past).</p></dd>
 		</dl>
 		
 	</div>
@@ -176,15 +186,62 @@ Test.</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A string containing the fuzzy time for the given time interval.</p>
+		<p>A string containing the fuzzy time for the given time interval using the preferred localization.</p>
 	</div>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Second paragraph.</p>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RIOFuzzyTime.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fuzzyTimeStringWithTimeInterval:localization:" title="fuzzyTimeStringWithTimeInterval:localization:"></a>
+	<h3 class="subsubtitle method-title">fuzzyTimeStringWithTimeInterval:localization:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a string containing the fuzzy time for the given time interval and localization.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSString *)fuzzyTimeStringWithTimeInterval:(NSTimeInterval)<em>timeInterval</em> localization:(NSString *)<em>localization</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeInterval</em></dt>
+			<dd><p>Seconds since/to a given event. The time interval value can either be positive (the future) or negative (the past).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localization</em></dt>
+			<dd><p>The desired localization or nil to use the preferred localization.</p></dd>
+		</dl>
+		
 	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A string containing the fuzzy time for the given time interval and localization.</p>
+	</div>
+	
+	
 	
 	
 	
@@ -215,7 +272,7 @@ Test.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2011 Rasmussen I/O. All rights reserved. (Last updated: 2011-07-13)</span><br />
+						<p><span class="copyright">&copy; 2011 Rasmussen I/O. All rights reserved. (Last updated: 2011-07-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.4 (build 703)</a>.</span></p>
 						

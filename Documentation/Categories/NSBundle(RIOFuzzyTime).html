@@ -38,11 +38,7 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/URLForResourceInPreferredLanguage:">&nbsp;&nbsp;&nbsp;&nbsp;- URLForResourceInPreferredLanguage:</option>
-	
-	<option value="//api/name/pathForResourceInPreferredLanguage:">&nbsp;&nbsp;&nbsp;&nbsp;- pathForResourceInPreferredLanguage:</option>
-	
-	<option value="//api/name/preferredLanguage">&nbsp;&nbsp;&nbsp;&nbsp;- preferredLanguage</option>
+	<option value="//api/name/preferredLocalization">&nbsp;&nbsp;&nbsp;&nbsp;- preferredLocalization</option>
 	
 	
 	
@@ -60,6 +56,8 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting the Preferred Localization">Getting the Preferred Localization</a></span></li>
+	
 </ul></li>
 
 
@@ -72,11 +70,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URLForResourceInPreferredLanguage:">URLForResourceInPreferredLanguage:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForResourceInPreferredLanguage:">pathForResourceInPreferredLanguage:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preferredLanguage">preferredLanguage</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preferredLocalization">preferredLocalization</a></span></li>
 	
 </ul></li>
 
@@ -112,8 +106,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>NSBundle category summary
-FIX</p>
+						<p>The <a href="NSBundle(RIOFuzzyTime">NSBundle(RIOFuzzyTime)</a>.html) category declares a single method to get the preferred localization. The preferred localization returns the current language (as specified in the Settings app) assuming that the language is supported by this library.</p>
 					</div>
 					
 					
@@ -125,28 +118,14 @@ FIX</p>
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
+						<a title="Getting the Preferred Localization" name="task_Getting the Preferred Localization"></a>
 						
-						
-
+<h3 class="subsubtitle task-title">Getting the Preferred Localization</h3>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/preferredLanguage">&ndash;&nbsp;preferredLanguage</a></code>
-		<span class="tooltip"><p>Returns the preferred language from the list of available localizations</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/pathForResourceInPreferredLanguage:">&ndash;&nbsp;pathForResourceInPreferredLanguage:</a></code>
-		<span class="tooltip"><p>Returns the path for the resource in the preferred language (Automatic selection)</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/URLForResourceInPreferredLanguage:">&ndash;&nbsp;URLForResourceInPreferredLanguage:</a></code>
-		<span class="tooltip"><p>Returns the URL for the resource in the preferred language (Automatic selection)</p></span>
+		<code><a href="#//api/name/preferredLocalization">&ndash;&nbsp;preferredLocalization</a></code>
+		<span class="tooltip"><p>Returns a string containing the preferred localization.</p></span>
 	</span>
 	
 	
@@ -168,118 +147,24 @@ FIX</p>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/URLForResourceInPreferredLanguage:" title="URLForResourceInPreferredLanguage:"></a>
-	<h3 class="subsubtitle method-title">URLForResourceInPreferredLanguage:</h3>
+	<a name="//api/name/preferredLocalization" title="preferredLocalization"></a>
+	<h3 class="subsubtitle method-title">preferredLocalization</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the URL for the resource in the preferred language (Automatic selection)</p>
+		<p>Returns a string containing the preferred localization.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (NSURL *)URLForResourceInPreferredLanguage:(NSString *)<em>resourceName</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>resourceName</em></dt>
-			<dd><p>The name of the resource</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>MISSING</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSBundle+RIOFuzzyTime.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/pathForResourceInPreferredLanguage:" title="pathForResourceInPreferredLanguage:"></a>
-	<h3 class="subsubtitle method-title">pathForResourceInPreferredLanguage:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Returns the path for the resource in the preferred language (Automatic selection)</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (NSString *)pathForResourceInPreferredLanguage:(NSString *)<em>resourceName</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>resourceName</em></dt>
-			<dd><p>The name of the resource</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>MISSING</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSBundle+RIOFuzzyTime.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/preferredLanguage" title="preferredLanguage"></a>
-	<h3 class="subsubtitle method-title">preferredLanguage</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Returns the preferred language from the list of available localizations</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (NSString *)preferredLanguage</code></div>
+	<div class="method-subsection method-declaration"><code>- (NSString *)preferredLocalization</code></div>
 	
 	
 	
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns the preferred language</p>
+		<p>A string containing the preferred localization.</p>
 	</div>
 	
 	
@@ -311,7 +196,7 @@ FIX</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2011 Rasmussen I/O. All rights reserved. (Last updated: 2011-07-13)</span><br />
+						<p><span class="copyright">&copy; 2011 Rasmussen I/O. All rights reserved. (Last updated: 2011-07-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.4 (build 703)</a>.</span></p>
 						
