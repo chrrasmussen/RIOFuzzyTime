@@ -9,14 +9,10 @@ The goal for this library is to support multiple languages. As of today it only 
 Installation
 ============
 
-__Note: Preliminary instructions__
-
 These steps are targeted for Xcode 4, but they may also work for earlier versions.
 
-Perform the steps of either section 1A or 1B depending on whether you need source control or not.
 
-
-### 1A - Using source control
+### 1 - Getting the library
 
 1. Open Terminal.app
 2. Navigate to your project's root folder (where the .xcodeproj-file is located)
@@ -25,12 +21,7 @@ Perform the steps of either section 1A or 1B depending on whether you need sourc
 5. Type `git submodule update --init --recursive`
 
 
-### 1B - Without source control
-
-_Instructions coming soon!_
-
-
-### 2 - In Xcode
+### 2 - Adding the library to Xcode
 
 1. Drag the _RIOFuzzyTime.xcodeproj_ into your Xcode-project (either as a sub-project or as a new workspace)
 2. Open the Build Settings in your project's settings
@@ -57,7 +48,7 @@ Remember to import _RIOFuzzyTime.h_ before using any of these methods.
 
 ```obj-c
 NSDate *now = [NSDate date];
-NSLog(@"Fuzzy time: %@", [now fuzzyTime]);
+NSLog(@"Fuzzy time: %@", [now fuzzyTimeString]);
 ```
 
 Outputs:
@@ -70,13 +61,13 @@ Fuzzy time: Just now
 ### RIOFuzzyTime static method
 
 ```obj-c
-NSLog(@"Fuzzy time: %@", [RIOFuzzyTime fuzzyTimeForTimeInterval:-1234.0]);
+NSLog(@"Fuzzy time: %@", [RIOFuzzyTime fuzzyTimeStringWithTimeInterval:-1234.0]);
 ```
 
 Outputs:
 
 ```
-Fuzzy time: 20 minutes ago
+Fuzzy time: About 20 minutes ago
 ```
 
 
@@ -127,16 +118,10 @@ Specification
         <td>60*60*24*365,25/12</td>
     </tr>
     <tr>
-        <td>1-9 years</td>
+        <td>1-99 years</td>
         <td>About a year ago</td>
-        <td>60*60*24*365,25*10</td>
+        <td>60*60*24*365,25*100</td>
         <td>60*60*24*365,25</td>
-    </tr>
-    <tr>
-        <td>1-9 centuries</td>
-        <td>About a century ago</td>
-        <td>60*60*24*365,25*10*10</td>
-        <td>60*60*24*365,25*10</td>
     </tr>
 </table>
 
