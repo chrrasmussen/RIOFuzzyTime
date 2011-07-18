@@ -126,7 +126,7 @@
 		</dict>
 		<dict>
 			<key>limit</key>
-			<integer>315576000</integer>
+			<integer>3155760000</integer>
 			<key>scale</key>
 			<integer>31557600</integer>
 			<key>singularForm</key>
@@ -142,26 +142,6 @@
 				<string>About %d years ago</string>
 				<key>future</key>
 				<string>About %d years since now</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>limit</key>
-			<integer>3155760000</integer>
-			<key>scale</key>
-			<integer>315576000</integer>
-			<key>singularForm</key>
-			<dict>
-				<key>past</key>
-				<string>About a century ago</string>
-				<key>future</key>
-				<string>About a century since now</string>
-			</dict>
-			<key>pluralForm</key>
-			<dict>
-				<key>past</key>
-				<string>About %d centuries ago</string>
-				<key>future</key>
-				<string>About %d centuries since now</string>
 			</dict>
 		</dict>
 	</array>

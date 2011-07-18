@@ -126,13 +126,13 @@
 		</dict>
 		<dict>
 			<key>limit</key>
-			<integer>315576000</integer>
+			<integer>3155760000</integer>
 			<key>scale</key>
 			<integer>31557600</integer>
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Et år side siden</string>
+				<string>Et år siden</string>
 				<key>future</key>
 				<string>Et år fra nå</string>
 			</dict>
@@ -142,26 +142,6 @@
 				<string>%d år siden</string>
 				<key>future</key>
 				<string>%d år fra nå</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>limit</key>
-			<integer>3155760000</integer>
-			<key>scale</key>
-			<integer>315576000</integer>
-			<key>singularForm</key>
-			<dict>
-				<key>past</key>
-				<string>Et århundre siden</string>
-				<key>future</key>
-				<string>Et århundre fra nå</string>
-			</dict>
-			<key>pluralForm</key>
-			<dict>
-				<key>past</key>
-				<string>%d århundre siden</string>
-				<key>future</key>
-				<string>%d århundre fra nå</string>
 			</dict>
 		</dict>
 	</array>

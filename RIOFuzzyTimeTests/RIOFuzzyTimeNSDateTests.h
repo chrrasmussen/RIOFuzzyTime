@@ -1,13 +1,13 @@
 //
-//  RIOFuzzyTimeEnglishTests.h
+//  RIOFuzzyTimeNSDateTests.h
 //  RIOFuzzyTime
 //
-//  Created by Christian Rasmussen on 16.06.11.
+//  Created by Christian Rasmussen on 18.07.11.
 //  Copyright 2011 Rasmussen I/O. All rights reserved.
 //
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface RIOFuzzyTimeEnglishTests : SenTestCase
+@interface RIOFuzzyTimeNSDateTests : SenTestCase
 
 @end
