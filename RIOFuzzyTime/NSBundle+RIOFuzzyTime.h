@@ -10,13 +10,19 @@
 
 
 /**
- 
+ The NSBundle(RIOFuzzyTime) category declares a single method to get the preferred localization. The preferred localization returns the current language (as specified in the Settings app) assuming that the language is supported by this library.
  */
 @interface NSBundle (RIOFuzzyTime)
 
+
+/** @name Getting the Preferred Localization
+ *********************************************/
+
+
 /**
- <#summary#>
- @returns <#description#>
+ Returns a string containing the preferred localization.
+ 
+ @returns A string containing the preferred localization.
  */
 - (NSString *)preferredLocalization;
 

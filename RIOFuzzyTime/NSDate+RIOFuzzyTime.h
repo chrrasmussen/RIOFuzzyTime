@@ -1,5 +1,5 @@
 //
-//  RIOFuzzyTime.h
+//  NSDate+RIOFuzzyTime.h
 //  RIOFuzzyTime
 //
 //  Created by Christian Rasmussen on 16.06.11.
@@ -8,14 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+
 /**
- Summary of NSDate(RIOFuzzyTime)
+ The NSDate(RIOFuzzyTime) category declares a single method to get the fuzzy time from an NSDate instance.
  */
 @interface NSDate (RIOFuzzyTime)
 
+
+/** @name Getting the Fuzzy Time
+ *********************************/
+
+
 /**
- A convenience method to obtain fuzzy time for an NSDate
- @returns MISSING
+ Returns a string containing the fuzzy time of the receiver.
+ 
+ @returns A string containing the fuzzy time of the receiver.
  */
 - (NSString *)fuzzyTimeString;
 

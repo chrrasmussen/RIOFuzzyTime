@@ -8,20 +8,21 @@
 
 #import "NSBundle+RIOFuzzyTime.h"
 
+
 @implementation NSBundle (RIOFuzzyTime)
 
 - (NSString *)preferredLocalization
 {
     NSArray *availableLocalizations = [self localizations];
-    __block NSString *preferredLocalization = nil;
+    NSString *preferredLocalization = nil;
     
     NSArray *preferredLanguages = [NSLocale preferredLanguages];
-    [preferredLanguages enumerateObjectsUsingBlock:^(__strong id obj, NSUInteger idx, BOOL *stop) {
-        if ([availableLocalizations containsObject:obj]) {
-            preferredLocalization = obj;
-            *stop = YES;
+    for (NSString *language in preferredLanguages) {
+        if ([availableLocalizations containsObject:language]) {
+            preferredLocalization = language;
+            break;
         }
-    }];
+    }
     
     return preferredLocalization;
 }

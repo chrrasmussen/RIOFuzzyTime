@@ -1,5 +1,5 @@
 //
-//  RIOFuzzyTime.m
+//  NSDate+RIOFuzzyTime.m
 //  RIOFuzzyTime
 //
 //  Created by Christian Rasmussen on 16.06.11.
