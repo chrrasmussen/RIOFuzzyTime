@@ -49,13 +49,13 @@
             NSString *format = nil;
             if (scaledTimeInterval != 1)
             {
-                // Plural
+                // Plural form
                 NSDictionary *pluralFormats = [scale objectForKey:@"pluralForm"];
                 format = (past == YES) ? [pluralFormats objectForKey:@"past"] : [pluralFormats objectForKey:@"future"];
             }
             else
             {
-                // Singular
+                // Singular form
                 NSDictionary *singularFormats = [scale objectForKey:@"singularForm"];
                 format = (past == YES) ? [singularFormats objectForKey:@"past"] : [singularFormats objectForKey:@"future"];
             }
@@ -64,7 +64,7 @@
         }
     }
     
-    return [NSString stringWithFormat:@"Unsupported time interval (%f)", timeInterval];
+    return [NSString stringWithFormat:@"Unsupported time interval '%f' for localization '%@'", timeInterval, localization];
 }
 
 
@@ -98,6 +98,5 @@
     
     return bundle;
 }
-
 
 @end

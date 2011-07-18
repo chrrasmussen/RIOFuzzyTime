@@ -41,25 +41,25 @@ do { \
 - (void)testReturn1MinuteAgo
 {
     NSUInteger minute = 60;
-    RIOAssertFuzzyTime(@"Et minutt siden", @"nb", -(1.0 * minute + 1), -(1.5 * minute), -(2.0 * minute - 1));
+    RIOAssertFuzzyTime(@"Rundt et minutt siden", @"nb", -(1.0 * minute + 1), -(1.5 * minute), -(2.0 * minute - 1));
 }
 
 - (void)testReturn1MinuteSinceNow
 {
     NSUInteger minute = 60;
-    RIOAssertFuzzyTime(@"Et minutt fra nå", @"nb", 1.0 * minute + 1, 1.5 * minute, 2.0 * minute - 1);
+    RIOAssertFuzzyTime(@"Rundt et minutt fra nå", @"nb", 1.0 * minute + 1, 1.5 * minute, 2.0 * minute - 1);
 }
 
 - (void)testReturn59MinutesAgo
 {
     NSUInteger minute = 60;
-    RIOAssertFuzzyTime(@"59 minutter siden", @"nb", -(59.0 * minute + 1), -(59.5 * minute), -(60.0 * minute - 1));
+    RIOAssertFuzzyTime(@"Rundt 59 minutter siden", @"nb", -(59.0 * minute + 1), -(59.5 * minute), -(60.0 * minute - 1));
 }
 
 - (void)testReturn59MinutesSinceNow
 {
     NSUInteger minute = 60;
-    RIOAssertFuzzyTime(@"59 minutter fra nå", @"nb", 59.0 * minute + 1, 59.5 * minute, 60.0 * minute - 1);
+    RIOAssertFuzzyTime(@"Rundt 59 minutter fra nå", @"nb", 59.0 * minute + 1, 59.5 * minute, 60.0 * minute - 1);
 }
 
 
@@ -68,25 +68,25 @@ do { \
 - (void)testReturn1HourAgo
 {
     NSUInteger hour = 60*60;
-    RIOAssertFuzzyTime(@"En time siden", @"nb", -(1.0 * hour + 1), -(1.5 * hour), -(2.0 * hour - 1));
+    RIOAssertFuzzyTime(@"Rundt en time siden", @"nb", -(1.0 * hour + 1), -(1.5 * hour), -(2.0 * hour - 1));
 }
 
 - (void)testReturn1HourSinceNow
 {
     NSUInteger hour = 60*60;
-    RIOAssertFuzzyTime(@"En time fra nå", @"nb", 1.0 * hour + 1, 1.5 * hour, 2.0 * hour - 1);
+    RIOAssertFuzzyTime(@"Rundt en time fra nå", @"nb", 1.0 * hour + 1, 1.5 * hour, 2.0 * hour - 1);
 }
 
 - (void)testReturn23HoursAgo
 {
     NSUInteger hour = 60*60;
-    RIOAssertFuzzyTime(@"23 timer siden", @"nb", -(23.0 * hour + 1), -(23.5 * hour), -(24.0 * hour - 1));
+    RIOAssertFuzzyTime(@"Rundt 23 timer siden", @"nb", -(23.0 * hour + 1), -(23.5 * hour), -(24.0 * hour - 1));
 }
 
 - (void)testReturn23HoursSinceNow
 {
     NSUInteger hour = 60*60;
-    RIOAssertFuzzyTime(@"23 timer fra nå", @"nb", 23.0 * hour + 1, 23.5 * hour, 24.0 * hour - 1);
+    RIOAssertFuzzyTime(@"Rundt 23 timer fra nå", @"nb", 23.0 * hour + 1, 23.5 * hour, 24.0 * hour - 1);
 }
 
 
@@ -95,25 +95,25 @@ do { \
 - (void)testReturn1DayAgo
 {
     NSUInteger day = 60*60*24;
-    RIOAssertFuzzyTime(@"En dag siden", @"nb", -(1.0 * day + 1), -(1.5 * day), -(2.0 * day - 1));
+    RIOAssertFuzzyTime(@"Rundt en dag siden", @"nb", -(1.0 * day + 1), -(1.5 * day), -(2.0 * day - 1));
 }
 
 - (void)testReturn1DaySinceNow
 {
     NSUInteger day = 60*60*24;
-    RIOAssertFuzzyTime(@"En dag fra nå", @"nb", 1.0 * day + 1, 1.5 * day, 2.0 * day - 1);
+    RIOAssertFuzzyTime(@"Rundt en dag fra nå", @"nb", 1.0 * day + 1, 1.5 * day, 2.0 * day - 1);
 }
 
 - (void)testReturn6DaysAgo
 {
     NSUInteger day = 60*60*24;
-    RIOAssertFuzzyTime(@"6 dager siden", @"nb", -(6.0 * day + 1), -(6.5 * day), -(7.0 * day - 1));
+    RIOAssertFuzzyTime(@"Rundt 6 dager siden", @"nb", -(6.0 * day + 1), -(6.5 * day), -(7.0 * day - 1));
 }
 
 - (void)testReturn6DaysSinceNow
 {
     NSUInteger day = 60*60*24;
-    RIOAssertFuzzyTime(@"6 dager fra nå", @"nb", 6.0 * day + 1, 6.5 * day, 7.0 * day - 1);
+    RIOAssertFuzzyTime(@"Rundt 6 dager fra nå", @"nb", 6.0 * day + 1, 6.5 * day, 7.0 * day - 1);
 }
 
 
@@ -122,27 +122,27 @@ do { \
 - (void)testReturn1WeekAgo
 {
     NSUInteger week = 60*60*24*7;
-    RIOAssertFuzzyTime(@"En uke siden", @"nb", -(1.0 * week + 1), -(1.5 * week), -(2.0 * week - 1));
+    RIOAssertFuzzyTime(@"Rundt en uke siden", @"nb", -(1.0 * week + 1), -(1.5 * week), -(2.0 * week - 1));
 }
 
 - (void)testReturn1WeekSinceNow
 {
     NSUInteger week = 60*60*24*7;
-    RIOAssertFuzzyTime(@"En uke fra nå", @"nb", 1.0 * week + 1, 1.5 * week, 2.0 * week - 1);
+    RIOAssertFuzzyTime(@"Rundt en uke fra nå", @"nb", 1.0 * week + 1, 1.5 * week, 2.0 * week - 1);
 }
 
 - (void)testReturn4WeeksAgo
 {
     NSUInteger week = 60*60*24*7;
     NSUInteger month = 60*60*24*365.25/12;
-    RIOAssertFuzzyTime(@"4 uker siden", @"nb", -(4.0 * week + 1), -(4.0 * week + (month - 4.0 * week) / 2), -(1.0 * month - 1));
+    RIOAssertFuzzyTime(@"Rundt 4 uker siden", @"nb", -(4.0 * week + 1), -(4.0 * week + (month - 4.0 * week) / 2), -(1.0 * month - 1));
 }
 
 - (void)testReturn4WeeksSinceNow
 {
     NSUInteger week = 60*60*24*7;
     NSUInteger month = 60*60*24*365.25/12;
-    RIOAssertFuzzyTime(@"4 uker fra nå", @"nb", 4.0 * week + 1, 4.0 * week + (month - 4.0 * week) / 2, 1.0 * month - 1);
+    RIOAssertFuzzyTime(@"Rundt 4 uker fra nå", @"nb", 4.0 * week + 1, 4.0 * week + (month - 4.0 * week) / 2, 1.0 * month - 1);
 }
 
 
@@ -151,25 +151,25 @@ do { \
 - (void)testReturn1MonthAgo
 {
     NSUInteger month = 60*60*24*365.25/12;
-    RIOAssertFuzzyTime(@"En måned siden", @"nb", -(1.0 * month + 1), -(1.5 * month), -(2.0 * month - 1));
+    RIOAssertFuzzyTime(@"Rundt en måned siden", @"nb", -(1.0 * month + 1), -(1.5 * month), -(2.0 * month - 1));
 }
 
 - (void)testReturn1MonthSinceNow
 {
     NSUInteger month = 60*60*24*365.25/12;
-    RIOAssertFuzzyTime(@"En måned fra nå", @"nb", 1.0 * month + 1, 1.5 * month, 2.0 * month - 1);
+    RIOAssertFuzzyTime(@"Rundt en måned fra nå", @"nb", 1.0 * month + 1, 1.5 * month, 2.0 * month - 1);
 }
 
 - (void)testReturn11MonthsAgo
 {
     NSUInteger month = 60*60*24*365.25/12;
-    RIOAssertFuzzyTime(@"11 måneder siden", @"nb", -(11.0 * month + 1), -(11.5 * month), -(12.0 * month - 1));
+    RIOAssertFuzzyTime(@"Rundt 11 måneder siden", @"nb", -(11.0 * month + 1), -(11.5 * month), -(12.0 * month - 1));
 }
 
 - (void)testReturn11MonthsSinceNow
 {
     NSUInteger month = 60*60*24*365.25/12;
-    RIOAssertFuzzyTime(@"11 måneder fra nå", @"nb", 11.0 * month + 1, 11.5 * month, 12.0 * month - 1);
+    RIOAssertFuzzyTime(@"Rundt 11 måneder fra nå", @"nb", 11.0 * month + 1, 11.5 * month, 12.0 * month - 1);
 }
 
 
@@ -178,25 +178,25 @@ do { \
 - (void)testReturn1YearAgo
 {
     NSUInteger year = 60*60*24*365.25;
-    RIOAssertFuzzyTime(@"Et år siden", @"nb", -(1.0 * year + 1), -(1.5 * year), -(2.0 * year - 1));
+    RIOAssertFuzzyTime(@"Rundt et år siden", @"nb", -(1.0 * year + 1), -(1.5 * year), -(2.0 * year - 1));
 }
 
 - (void)testReturn1YearSinceNow
 {
     NSUInteger year = 60*60*24*365.25;
-    RIOAssertFuzzyTime(@"Et år fra nå", @"nb", 1.0 * year + 1, 1.5 * year, 2.0 * year - 1);
+    RIOAssertFuzzyTime(@"Rundt et år fra nå", @"nb", 1.0 * year + 1, 1.5 * year, 2.0 * year - 1);
 }
 
 - (void)testReturn99YearsAgo
 {
     NSUInteger year = 60*60*24*365.25;
-    RIOAssertFuzzyTime(@"99 år siden", @"nb", -(99.0 * year + 1), -(99.5 * year), -(100.0 * year - 1));
+    RIOAssertFuzzyTime(@"Rundt 99 år siden", @"nb", -(99.0 * year + 1), -(99.5 * year), -(100.0 * year - 1));
 }
 
 - (void)testReturn99YearsSinceNow
 {
     NSUInteger year = 60*60*24*365.25;
-    RIOAssertFuzzyTime(@"99 år fra nå", @"nb", 99.0 * year + 1, 99.5 * year, 100.0 * year - 1);
+    RIOAssertFuzzyTime(@"Rundt 99 år fra nå", @"nb", 99.0 * year + 1, 99.5 * year, 100.0 * year - 1);
 }
 
 

@@ -32,16 +32,16 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Et minutt siden</string>
+				<string>Rundt et minutt siden</string>
 				<key>future</key>
-				<string>Et minutt fra nå</string>
+				<string>Rundt et minutt fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>%d minutter siden</string>
+				<string>Rundt %d minutter siden</string>
 				<key>future</key>
-				<string>%d minutter fra nå</string>
+				<string>Rundt %d minutter fra nå</string>
 			</dict>
 		</dict>
 		<dict>
@@ -52,16 +52,16 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>En time siden</string>
+				<string>Rundt en time siden</string>
 				<key>future</key>
-				<string>En time fra nå</string>
+				<string>Rundt en time fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>%d timer siden</string>
+				<string>Rundt %d timer siden</string>
 				<key>future</key>
-				<string>%d timer fra nå</string>
+				<string>Rundt %d timer fra nå</string>
 			</dict>
 		</dict>
 		<dict>
@@ -72,16 +72,16 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>En dag siden</string>
+				<string>Rundt en dag siden</string>
 				<key>future</key>
-				<string>En dag fra nå</string>
+				<string>Rundt en dag fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>%d dager siden</string>
+				<string>Rundt %d dager siden</string>
 				<key>future</key>
-				<string>%d dager fra nå</string>
+				<string>Rundt %d dager fra nå</string>
 			</dict>
 		</dict>
 		<dict>
@@ -92,16 +92,16 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>En uke siden</string>
+				<string>Rundt en uke siden</string>
 				<key>future</key>
-				<string>En uke fra nå</string>
+				<string>Rundt en uke fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>%d uker siden</string>
+				<string>Rundt %d uker siden</string>
 				<key>future</key>
-				<string>%d uker fra nå</string>
+				<string>Rundt %d uker fra nå</string>
 			</dict>
 		</dict>
 		<dict>
@@ -112,16 +112,16 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>En måned siden</string>
+				<string>Rundt en måned siden</string>
 				<key>future</key>
-				<string>En måned fra nå</string>
+				<string>Rundt en måned fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>%d måneder siden</string>
+				<string>Rundt %d måneder siden</string>
 				<key>future</key>
-				<string>%d måneder fra nå</string>
+				<string>Rundt %d måneder fra nå</string>
 			</dict>
 		</dict>
 		<dict>
@@ -132,16 +132,16 @@
 			<key>singularForm</key>
 			<dict>
 				<key>past</key>
-				<string>Et år siden</string>
+				<string>Rundt et år siden</string>
 				<key>future</key>
-				<string>Et år fra nå</string>
+				<string>Rundt et år fra nå</string>
 			</dict>
 			<key>pluralForm</key>
 			<dict>
 				<key>past</key>
-				<string>%d år siden</string>
+				<string>Rundt %d år siden</string>
 				<key>future</key>
-				<string>%d år fra nå</string>
+				<string>Rundt %d år fra nå</string>
 			</dict>
 		</dict>
 	</array>
